@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jack Gleeson"
+		]
+	},
+	"nativepayments-desc": "Payment Request API integration for on-wiki donate link"
+}

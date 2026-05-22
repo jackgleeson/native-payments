@@ -1,0 +1,2566 @@
+<div id="siteNotice"><div id="centralNotice" data-nosnippet="" class="cn-undefined">
+<style>
+/* css variables */
+#centralNotice .frb {
+    color-scheme: normal;
+    color-scheme: light;
+    --wmui-base100: #fff;
+    --wmui-base90: #f8f9fa;
+    --wmui-base80: #eaecf0;
+    --wmui-base70: #c8ccd1;
+    --wmui-base50: #a2a9b1;
+    --wmui-base30: #72777d;
+    --wmui-base20: #54595d;
+    --wmui-base10: #202122;
+    --wmui-base0: #000;
+    --wmui-accent: #36c;
+    --wmui-accent-light: #eaf3ff;
+    --wmui-accent-dark: #2a4b8d;
+    --wmui-red: #d73333;
+    --wmui-red-light: #fee7e6;
+    --wmui-red-dark: #b32424;
+    --wmui-green: #00af89;
+    --wmui-green-light: #d5fdf4;
+    --wmui-green-dark: #14866d;
+    --wmui-yellow: #fc3;
+    --wmui-yellow-light: #fef6e7;
+    --wmui-yellow-dark: #ac6600;
+    --frb-primary: #2e5cb8;
+    --frb-primary-light: #dde4f3;
+    --frb-primary-dark: #2a4b8d;
+    --frb-body: var(--wmui-base0);
+    --frb-link: var(--wmui-accent);
+    --frb-link-hover: #447ff5;
+    --frb-main-background: var(--wmui-base100);
+    --frb-message-background: #D0DFB9;
+    --frb-message-border: #D0DFB9;
+    --frb-fieldset-background: var(--wmui-base100);
+    --frb-legend: var(--frb-muted);
+    --frb-message: var(--wmui-base0);
+    --frb-muted: var(--wmui-base20);
+    --frb-muted-hover: var(--wmui-base0);
+    --frb-radio: var(--wmui-accent);
+    --frb-button: var(--wmui-base90);
+    --frb-button-border: var(--wmui-base50);
+    --frb-button-hover: var(--wmui-accent-light);
+    --frb-button-border-hover: var(--wmui-base50);
+    --frb-button-focus: var(--wmui-accent-light);
+    --frb-button-border-focus: var(--wmui-base50);
+    --frb-button-selected: var(--frb-primary-dark);
+    --frb-button-border-selected: var(--frb-primary-dark);
+    --frb-button-text: var(--frb-link);
+    --frb-button-selected-text: var(--wmui-base100);
+    --frb-submit: var(--wmui-accent);
+    --frb-submit-border: var(--wmui-accent);
+    --frb-submit-hover: #447ff5;
+    --frb-submit-border-hover: #447ff5;
+    --frb-error: var(--wmui-red-dark); /* dark because it can appear on a colored background */
+    --frb-nag-background: var(--wmui-base100);
+    --frb-nag-border: #900;
+    --frb-cta-background: #f9dde9;
+    --frb-dialog-backdrop: #ffffffa6;
+    --frb-dialog-button: #f8f9fa;
+    --frb-dialog-button-border: #a2a9b1;
+    --frb-dialog-button-text: #007de2;
+    --frb-dialog-button-hover: #eaf3ff;
+    --frb-dialog-button-border-hover: #a2a9b1;
+    --frb-dialog-button-text-hover: #007de2;
+    --frb-nag-background: var(--wmui-base100);
+    --frb-nag-border: #900;
+    --w25-puzzle-piece: #AAC680;
+    --w25-w-color: #000;
+}
+
+html.skin-theme-clientpref-night #centralNotice .frb {
+    color-scheme: dark;
+    --frb-primary: #2e5cb8;
+    --frb-primary-light: #dde4f3;
+    --frb-primary-dark: #2a4b8d;
+    --frb-body: var(--wmui-base100);
+    --frb-link: #95a0d8;
+    --frb-link-hover: #aab2e0;
+    --frb-main-background: #131624;
+    --frb-message-background: #292b39;
+    --frb-message-border: #40424e;
+    --frb-fieldset-background: transparent;
+    --frb-legend: var(--wmui-base80);
+    --frb-message: var(--wmui-base100);
+    --frb-muted: #8b928d;
+    --frb-muted-hover: #aab2e0;
+    --frb-radio: var(--wmui-base0);
+    --frb-button: #202122;
+    --frb-button-border: #72777d;
+    --frb-button-hover: #101418;
+    --frb-button-border-hover: #677dc8;
+    --frb-button-focus: #677dc8;
+    --frb-button-border-focus: #677dc8;
+    --frb-button-selected: #677dc8;
+    --frb-button-border-selected: #677dc8;
+    --frb-button-text: #fff;
+    --frb-button-selected-text: #fff;
+    --frb-submit: #677dc8;
+    --frb-submit-border: #677dc8;
+    --frb-submit-hover: #aab2e0;
+    --frb-submit-border-hover: #aab2e0;
+    --frb-error: var(--wmui-red);
+    --frb-nag-background: var(--frb-main-background);
+    --frb-nag-border: #4e6cc0;
+    --frb-cta-background: #e38c8c;
+    --frb-dialog-backdrop: #000000a6;
+    --frb-dialog-button: #9a9eb6;
+    --frb-dialog-button-border: var(--frb-dialog-button);
+    --frb-dialog-button-text: var(--wmui-base0);
+    --frb-dialog-button-hover: #677dc8;
+    --frb-dialog-button-border-hover: var(--frb-dialog-button-hover);
+    --frb-dialog-button-text-hover: var(--wmui-base100);
+    --frb-nag-background: #223461;
+    --frb-nag-border: #4e6cc0;
+    --w25-puzzle-piece: #000000;
+    --w25-w-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* automatic mode */
+    html.skin-theme-clientpref-os #centralNotice .frb {
+        color-scheme: dark;
+        --frb-primary: #2e5cb8;
+        --frb-primary-light: #dde4f3;
+        --frb-primary-dark: #2a4b8d;
+        --frb-body: var(--wmui-base100);
+        --frb-link: #95a0d8;
+        --frb-link-hover: #aab2e0;
+        --frb-main-background: #131624;
+        --frb-message-background: #292b39;
+        --frb-message-border: #40424e;
+        --frb-fieldset-background: transparent;
+        --frb-legend: var(--wmui-base80);
+        --frb-message: var(--wmui-base100);
+        --frb-muted: #8b928d;
+        --frb-muted-hover: #aab2e0;
+        --frb-radio: var(--wmui-base0);
+        --frb-button: #202122;
+        --frb-button-border: #72777d;
+        --frb-button-hover: #101418;
+        --frb-button-border-hover: #677dc8;
+        --frb-button-focus: #677dc8;
+        --frb-button-border-focus: #677dc8;
+        --frb-button-selected: #677dc8;
+        --frb-button-border-selected: #677dc8;
+        --frb-button-text: #fff;
+        --frb-button-selected-text: #fff;
+        --frb-submit: #677dc8;
+        --frb-submit-border: #677dc8;
+        --frb-submit-hover: #aab2e0;
+        --frb-submit-border-hover: #aab2e0;
+        --frb-error: var(--wmui-red);
+        --frb-nag-background: var(--frb-main-background);
+        --frb-nag-border: #4e6cc0;
+        --frb-cta-background: #e38c8c;
+        --frb-dialog-backdrop: #000000a6;
+        --frb-dialog-button: #9a9eb6;
+        --frb-dialog-button-border: var(--frb-dialog-button);
+        --frb-dialog-button-text: var(--wmui-base0);
+        --frb-dialog-button-hover: #677dc8;
+        --frb-dialog-button-border-hover: var(--frb-dialog-button-hover);
+        --frb-dialog-button-text-hover: var(--wmui-base100);
+        --frb-nag-background: #223461;
+        --frb-nag-border: #4e6cc0;
+        --w25-puzzle-piece: #000;
+        --w25-w-color: #fff;
+    }
+}
+
+/* Hide when editing */
+.action-edit #centralNotice,
+.ve-activated #centralNotice {
+    display: none !important;
+}
+
+/* Fix fixed position z-index for de.wikipedia and 'gesproken_wiki' element on nl.wikipedia */
+
+
+
+/* Border-Box */
+
+#centralNotice .frb,
+#centralNotice .frb *,
+#centralNotice .frb *:before,
+#centralNotice .frb *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Resets */
+#centralNotice .frb * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: none;
+}
+
+#centralNotice .frb button {
+    cursor: pointer;
+}
+
+#centralNotice .frb frb-amt,
+#centralNotice .frb-replaced {
+    white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #centralNotice .frb,
+#centralNotice .frb * {
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* --- Main banner wrapper --- */
+
+#centralNotice .frb {
+    display: none;
+    color: var(--frb-body);
+    font-size: 16px;
+    line-height: 1.1875; /*19px @16px*/
+    font-family: system-ui, -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto, "Oxygen-Sans", Ubuntu, Cantarell, Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left; /* needed because of #siteNotice { text-align: center; } in MediaWiki */
+    font-weight: normal;
+    font-style: normal; /* needed for uk.wikipedia */
+}
+
+body.rtl #centralNotice .frb {
+    text-align: right;
+}
+
+#centralNotice .frb-in-article {
+    margin-bottom: 20px;
+}
+
+#centralNotice .frb-nag,
+#centralNotice .frb-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    background-color: var(--frb-main-background);
+    border-top: 1px solid var(--frb-button-border);
+    box-shadow: 0 -1px 1px rgba(0,0,0,0.1);
+}
+
+/*
+TODO: A/B test removing this. Was originally to avoid overlapping Vector 2022 width toggle
+which is no longer there
+*/
+@media ( min-width: 1400px ) {
+    body.skin-vector-2022 #centralNotice .frb-nag,
+body.skin-vector-2022 #centralNotice .frb-fixed {
+        left: 48px;
+        right: 48px;
+        width: auto;
+        border-left: 1px solid var(--frb-button-border);
+        border-right: 1px solid var(--frb-button-border);
+    }
+}
+
+#centralNotice .frb-layout {
+    display: grid;
+    grid-template-columns: auto 330px;
+    grid-template-rows: minmax(420px, max-content) auto;
+    grid-template-areas:
+        "main sidebar"
+        "footer sidebar";
+}
+
+/* --- Icon buttons --- */
+
+#centralNotice .frb .frb-icon-btn {
+    display: block;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .5;
+}
+#centralNotice .frb .frb-icon-btn:hover {
+    opacity: 1;
+}
+
+#centralNotice .frb .frb-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%23000' fill='none' stroke-linecap='round'%3E%3Cpath d='M1 1 l8 8 M9 1 l-8 8'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    background-size: 16px 16px;
+}
+#centralNotice .frb .frb-step.frb-step-1 .frb-close {
+    top: -15px;
+    right: -20px;
+}
+body.rtl #centralNotice .frb .frb-close {
+    right: auto;
+    left: 0;
+}
+#centralNotice .frb-nag-layout .frb-close {
+    top: -17px;
+    right: -17px;
+}
+
+/* --- Back buttons --- */
+#centralNotice .frb .frb-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 16'%3E%3Cg fill='none' fill-rule='evenodd' transform='translate(1 1)'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.778' d='M7.181 13.285L.753 7 7.181.715'%3E%3C/path%3E%3Crect fill='%23000' width='18.182' height='1.778' x='.818' y='6.111' rx='.889'%3E%3C/rect%3E%3C/g%3E%3C/svg%3E");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+#centralNotice .frb .frb-back:hover {
+    opacity: 1;
+}
+
+#centralNotice .frb-dialog .frb-back {
+    top: 10px;
+    left: 10px;
+}
+
+/* -------------- Message -------------- */
+
+#centralNotice .frb-message {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-radius: .75em;
+    background: var(--frb-message-background);
+    border: 6px solid var(--frb-message-background);
+    color: var(--frb-message);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.6; /*24px @15px*/
+    z-index: 1;
+    padding: 20px;
+}
+
+@media (min-width: 860px) {
+    #centralNotice .frb-message {
+        padding: 10px 20px 20px;
+    }
+}
+
+@media (min-width: 960px) {
+    #centralNotice .frb-message {
+        font-size: 1.175vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    #centralNotice .frb-message {
+        font-size: 1.1vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    #centralNotice .frb-message {
+        font-size: 1vw;
+    }
+}
+
+@media (min-width: 1800px) {
+    #centralNotice .frb-message {
+        font-size: 18px;
+    }
+}
+
+#centralNotice .frb-message-icon {
+    float: left;
+    margin-top: 4px; /*in px since margin is consistent on all bp*/
+    margin-right: 2px;
+    height: 1em;
+    width: 1em;
+}
+
+#centralNotice .frb-message-icon circle {
+    fill: #fefd34;
+}
+
+#centralNotice .frb-nag .frb-message {
+    border: 6px solid var(--frb-nag-border);
+}
+
+#centralNotice .frb-nag .frb-message-icon circle {
+    fill: var(--frb-nag-border);
+}
+#centralNotice .frb-message-icon path {
+    fill: var(--wmui-base0);
+}
+
+#centralNotice .frb-nag .frb-message-icon path {
+    fill: var(--wmui-base100);
+}
+
+#centralNotice .frb-nag .frb-message-icon {
+    margin-top: 3px;
+}
+
+@media all and (min-width: 1300px) {
+    #centralNotice .frb-nag .frb-message-icon {
+        margin-top: 4px;
+    }
+}
+
+body.rtl #centralNotice .frb-message-icon {
+    float: right;
+    margin-right: 0;
+    margin-left: 4px;
+}
+
+#centralNotice .frb-header .frb-message-icon {
+    float: none;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: -2px;
+}
+
+#centralNotice .frb-message p {
+    margin: 0 0 1em;
+}
+
+#centralNotice .frb-message p:last-child {
+    margin: 0;
+}
+
+#centralNotice .frb-header {
+    flex: 0 0 auto;
+    max-height: 62px;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 1.75em;
+    line-height: 1;
+    font-weight: bold;
+}
+
+#centralNotice .frb-subheader {
+    font-size: 0.6em;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+#centralNotice .frb-message-content {
+    padding-bottom: 25px;
+}
+
+@media (max-width: 959px) {
+    #centralNotice .frb-header {
+        max-height: none;
+    }
+    #centralNotice .frb-message-content {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 860px) {
+    #centralNotice .frb-message-content {
+        padding-bottom: 55px;
+    }
+}
+
+
+/* Nag styles */
+
+/* make space at bottom of page for fixed nag */
+#centralNotice .mw-page-container {
+    padding-bottom: 120px;
+}
+
+#centralNotice .frb-nag {
+    cursor: pointer;
+}
+
+#centralNotice .frb-nag-layout {
+    display: grid;
+    grid-template-areas: "main sidebar";
+    grid-template-columns: auto 360px;
+}
+
+@media (min-width: 1200px) {
+    #centralNotice .frb-nag-layout {
+        grid-template-columns: auto 440px;
+    }
+}
+
+#centralNotice .frb-nag .frb-message {
+    padding: 22px 26px;
+    background: var(--frb-nag-background);
+    color: var(--frb-body);
+}
+
+@media (max-width: 1400px) {
+    #centralNotice .frb-nag .frb-message {
+        padding: 18px 18px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1100px) {
+    #centralNotice .frb-nag .frb-message {
+        font-size: 14px;
+    }
+}
+
+#centralNotice .frb-nag .frb-form-wrapper {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Triangle */
+#centralNotice .frb-message::after {
+    position: absolute;
+    content: " ";
+    top: 180px;
+    right: -25px;
+    margin: -10px 0 0 0;
+    border: 10px solid transparent;
+    border-left-color: var(--frb-message-background);
+    pointer-events: none;
+}
+body.rtl #centralNotice .frb-message::after {
+    right: auto;
+    left: -25px;
+    border-left-color: transparent;
+    border-right-color:  var(--frb-message-background);
+}
+
+#centralNotice .frb-nag .frb-message::after {
+    top: 50%;
+    border-left-color: var(--frb-nag-border);
+}
+
+body.rtl #centralNotice .frb-nag .frb-message::after {
+    border-left-color: transparent;
+    border-right-color: var(--frb-nag-border);
+}
+
+/* -------------- Form -------------- */
+
+#centralNotice .frb-form-wrapper {
+    grid-area: sidebar;
+    position: relative;
+    background: var(--frb-fieldset-background);
+}
+
+#centralNotice .frb-form-wrapper fieldset {
+    border: 0;
+    margin: 0 auto;
+    padding: 0 0 6px 0;
+}
+
+#centralNotice .frb-form-wrapper .frb-amounts {
+    padding: 0;
+    margin-top: 8px;
+}
+
+#centralNotice .frb-form-wrapper legend {
+    display: block;
+    margin: 0 0 2px;
+    padding: 0 4px;
+    font-weight: normal;
+    text-align: inherit;
+    font-size: 14px;
+    line-height: 1.2142857143; /*17px @14px*/
+    color: var(--frb-legend);
+    transition: all .25s ease-in-out;
+}
+
+#centralNotice .frb-form-wrapper {
+    counter-reset: count;
+}
+#centralNotice .frb-numbered {
+    counter-increment: count;
+}
+#centralNotice .frb-numbered::before {
+    content: counter(count) ". ";
+    position: absolute;
+    left: -12px;
+}
+body.rtl #centralNotice .frb-numbered::before {
+    left: auto;
+    right: -12px;
+}
+
+#centralNotice .frb-form-wrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    z-index: 2;
+}
+
+#centralNotice .frb-form-wrapper li {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+#centralNotice #frb-form {
+    padding-left: 25px;
+    position: relative;
+    overflow: hidden;
+    height: 100%; /* ensure varying height steps don't get cut off */
+}
+body.rtl #centralNotice #frb-form {
+    padding-left: 0;
+    padding-right: 25px;
+}
+
+#centralNotice .frb-frequency ul li {
+    flex: 1 0 0;
+}
+
+#centralNotice .frb-amounts ul li {
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+
+#centralNotice .frb-amounts ul li.frb-amt-other {
+    flex: 0 0 67%;
+    max-width: 67%;
+}
+
+#centralNotice .frb-amounts .frb-radio-label {
+    white-space: nowrap;
+}
+
+/* --- Frequency --- */
+
+#centralNotice .frb-annual-disabled .frb-frequency ul li:nth-of-type(3) {
+    display: none;
+}
+
+#centralNotice .frb-annual-disabled .frb-recurring-bar {
+    width: 50%;
+}
+
+/* --- Common Button Styles --- */
+
+/* Hide radio buttons */
+#centralNotice .frb-form-wrapper .frb-methods input[type="radio"],
+#centralNotice .frb-form-wrapper .frb-optin input[type="radio"],
+#centralNotice .frb-form-wrapper input[type="checkbox"] {
+    position: absolute;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    clip: rect(0 0 0 0);
+    border: 0;
+    margin: -1px;
+    padding: 0;
+}
+
+#centralNotice .frb-rml-link {
+    display: block;
+    font-size: 16px;
+    line-height: 1.125; /*18px @16px*/
+    color: var(--frb-link);
+    margin: 16px auto 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#centralNotice .frb-rml-link:hover,
+#centralNotice .frb-rml-link:focus {
+    color: var(--frb-link-hover);
+}
+
+#centralNotice .frb-radio,
+#centralNotice .frb-radio-label {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+#centralNotice .frb-radio {
+    cursor: pointer;
+    margin: 0 0 0 7px;
+}
+
+#centralNotice .frb-radio-label {
+    display: block;
+    padding: 12px 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Focus styles */
+
+/*Outline reset*/
+#centralNotice .frb-form-wrapper input[type=radio]:focus,
+#centralNotice .frb-radio:focus + .frb-radio-label,
+#centralNotice #frb-amt-other-input:focus {
+    outline: 0;
+}
+
+#centralNotice .frb button.frb-submit:focus {
+    box-shadow: inset 0 0 0 1px var(--frb-submit-hover), inset 0 0 0 2px var(--wmui-base100);
+}
+
+#centralNotice .frb-radio:enabled:focus + .frb-radio-label,
+#centralNotice .frb-radio:enabled:hover + .frb-radio-label {
+    color: var(--frb-link);
+    text-decoration: underline;
+}
+
+#centralNotice .frb-radio:disabled + label {
+    opacity: 0.4;
+    cursor: default;
+}
+
+/* Mostly so bank transfer methods don't overspill */
+#centralNotice .frb-methods .frb-label {
+    font-size: 13px;
+}
+
+#centralNotice .frb-methods svg {
+    max-width: 100%;
+    width: 64px;
+}
+
+/*Slight adaption for Paypal logo with USD string*/
+#centralNotice .frb-methods .frb-logo-payments--paypal-usd {
+    width: 85px;
+    margin-bottom: -6px;
+}
+
+/* ACH (Trustly) */
+#centralNotice .frb-pm-ach .frb-label {
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1;
+    gap: 2px;
+}
+
+/* Hide Trustly for one-time donations */
+#centralNotice #frb-form[data-frequency="onetime"] .frb-pm-ach,
+#centralNotice #frb-form[data-frequency="onetime"] .frb-payment-options-trustly,
+#centralNotice #frb-form[data-frequency="onetime"] .frb-trustly-divider {
+    display: none !important;
+}
+
+/* -- Credit card logos -- */
+
+#centralNotice .frb-pm-cc svg {
+    display: none;
+    width: auto;
+    max-height: 18px;
+}
+
+#centralNotice .frb-cc-logo-wrapper {
+    display: none;
+}
+
+#centralNotice .frb-cctypes-vmad .frb-pm-cc-label,
+#centralNotice .frb-cctypes-vmaj .frb-pm-cc-label,
+#centralNotice .frb-cctypes-vma  .frb-pm-cc-label,
+#centralNotice .frb-cctypes-vm   .frb-pm-cc-label {
+    display: none;
+}
+
+#centralNotice .frb-cctypes-vmad .frb-cc-logo-wrapper,
+#centralNotice .frb-cctypes-vmaj .frb-cc-logo-wrapper,
+#centralNotice .frb-cctypes-vma .frb-cc-logo-wrapper,
+#centralNotice .frb-cctypes-vm .frb-cc-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px;
+    font-size: 0; /* Remove spacing between icons */
+}
+
+#centralNotice .frb-cctypes-vmad .frb-cc-logo-visa,
+#centralNotice .frb-cctypes-vmad .frb-cc-logo-mastercard,
+#centralNotice .frb-cctypes-vmad .frb-cc-logo-amex,
+#centralNotice .frb-cctypes-vmad .frb-cc-logo-discover,
+#centralNotice .frb-cctypes-vmaj .frb-cc-logo-visa,
+#centralNotice .frb-cctypes-vmaj .frb-cc-logo-mastercard,
+#centralNotice .frb-cctypes-vmaj .frb-cc-logo-amex,
+#centralNotice .frb-cctypes-vmaj .frb-cc-logo-jcb,
+#centralNotice .frb-cctypes-vma  .frb-cc-logo-visa,
+#centralNotice .frb-cctypes-vma  .frb-cc-logo-mastercard,
+#centralNotice .frb-cctypes-vma  .frb-cc-logo-amex,
+#centralNotice .frb-cctypes-vm   .frb-cc-logo-visa,
+#centralNotice .frb-cctypes-vm   .frb-cc-logo-mastercard {
+    display: inline-block;
+}
+
+/* --- Other Amount --- */
+
+#centralNotice #frb-amt-other-input {
+    width: calc(100% - 33px);
+    padding: 4px 2px 4px 7px;
+    border: none;
+    direction: ltr;
+    text-align: left;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: bold;
+    color: var(--frb-body);
+    box-shadow: 0 2px var(--frb-main-background), 0 3px var(--frb-body);
+    -webkit-appearance: none;
+    border-radius: 0; /* needed for iPad */
+}
+
+#centralNotice #frb-amt-other-input:focus,
+#centralNotice #frb-amt-other-input:hover {
+    box-shadow: 0 2px var(--frb-main-background), 0 3px var(--frb-link);
+    color: var(--frb-link);
+}
+
+body.rtl #centralNotice #frb-amt-other-input {
+    text-align: right;
+}
+
+#centralNotice #frb-amt-other-input::placeholder {
+    opacity: 1;
+    color: var(--frb-body);
+}
+
+#centralNotice #frb-amt-other-input:focus::placeholder {
+    opacity: 1;
+    color: #666;
+}
+
+#centralNotice #frb-amt-other-input:hover::placeholder {
+    opacity: 1;
+    color: var(--frb-link);
+}
+
+/* --- Transaction fees options --- */
+
+/* Checkbox styles */
+
+#centralNotice .frb-checkbox-label {
+    position: relative;
+    display: inline-block;
+    margin: 4px 0 0 4px;
+    width: calc(100% - 10px);
+    padding-left: 24px;
+    padding-top: 2px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.3571428571; /*19px @14px*/
+    color: var(--frb-body);
+}
+body.rtl #centralNotice .frb-checkbox-label {
+    margin: 4px 4px 0 0;
+    padding-left: 0;
+    padding-right: 24px;
+}
+
+/* Outer-box */
+#centralNotice .frb-checkbox-label::before {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 0;
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    border-radius: 2px;
+    border: 1px solid var(--wmui-base50);
+    background-color: var(--wmui-base90);
+}
+body.rtl #centralNotice .frb-checkbox-label::before {
+    left: auto;
+    right: 0;
+}
+
+/* Checkmark */
+#centralNotice .frb-checkbox-label::after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 4px;
+    display: inline-block;
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+    border-color: var(--wmui-base100);
+}
+body.rtl #centralNotice .frb-checkbox-label::after {
+    left: auto;
+    right: 4px;
+}
+
+#centralNotice .frb-ptf-total {
+    font-weight: bold;
+}
+#centralNotice .frb-ptf-fee {
+    white-space: nowrap;
+}
+
+/* Hide the checkmark by default */
+#centralNotice .frb-checkbox + .frb-checkbox-label::after {
+    content: none;
+}
+/* Unhide the checkmark on the checked state */
+#centralNotice .frb-checkbox:checked + .frb-checkbox-label::after {
+    content: "";
+}
+
+#centralNotice .frb-checkbox:checked + .frb-checkbox-label:before {
+    background-color: var(--wmui-accent);
+    border-color: var(--wmui-accent);
+}
+
+/* Focus styles - unchecked */
+#centralNotice .frb-checkbox:focus + .frb-checkbox-label::before {
+    border-color: var(--wmui-accent);
+    box-shadow: inset 0 0 0 1px var(--wmui-accent);
+}
+
+/* Focus styles - checked */
+#centralNotice .frb-checkbox:focus:checked + .frb-checkbox-label::before {
+    box-shadow: inset 0 0 0 1px var(--wmui-accent), inset 0 0 0 2px var(--wmui-base100);
+}
+
+/* Hover */
+#centralNotice .frb-checkbox:hover + .frb-checkbox-label::before {
+    background-color: var(--wmui-base80);
+}
+
+#centralNotice .frb-checkbox:checked:hover + .frb-checkbox-label:before {
+    background-color: var(--frb-link-hover);
+    border-color: var(--frb-link-hover);
+}
+
+/* --- Email opt-in --- */
+
+#centralNotice .frb-form-wrapper .frb-optin {
+    margin-bottom: 3px;
+}
+
+#centralNotice .frb-form-wrapper .frb-optin legend {
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+#centralNotice .frb-optin-no-prompt {
+    display: none;
+    margin: 8px 4px;
+    padding: 4px 8px;
+    border: 2px solid #900;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 1.2857142857; /*18px @14px*/
+    font-weight: normal;
+}
+
+#centralNotice .frb-optin-no-prompt.is-positive {
+    border-color: var(--wmui-green-dark);
+    font-weight: bold;
+}
+
+#centralNotice .frb-optin-no-prompt__yes {
+    display: none;
+}
+
+#centralNotice .frb-optin-no-prompt__no {
+    display: block;
+}
+
+#centralNotice .frb-optin-no-prompt.is-positive .frb-optin-no-prompt__yes {
+    display: block;
+}
+
+#centralNotice .frb-optin-no-prompt.is-positive .frb-optin-no-prompt__no {
+    display: none;
+}
+
+#centralNotice .frb-optin-smallprint {
+    padding: 8px 4px;
+}
+
+/* --- Payment method Buttons --- */
+
+#centralNotice .frb-form-wrapper .frb-methods {
+    margin-top: 12px;
+    padding-bottom: 0;
+}
+
+/* --- Footer / Small Print --- */
+#centralNotice .frb-smallprint {
+    font-size: 12px;
+    line-height: 1.5; /*18px @12px*/
+    color: var(--frb-muted);
+    font-weight: normal;
+}
+#centralNotice .frb-smallprint a,
+#centralNotice .frb-smallprint button {
+    color: var(--frb-link);
+    margin: auto;
+    font-weight: bold;
+}
+#centralNotice .frb-smallprint a:hover,
+#centralNotice .frb-smallprint button:hover {
+    color: var(--frb-muted-hover);
+    text-decoration: underline;
+}
+
+#centralNotice .frb-footer-legal {
+    font-size: 12px;
+    margin-top: 10px;
+}
+#centralNotice .frb-footer-legal a {
+    color: var(--frb-muted);
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+#centralNotice .frb-footer {
+    grid-area: footer;
+    padding-top: 8px;
+}
+
+#centralNotice .frb-footer.frb-smallprint {
+    font-size: 14px;
+    text-align: center;
+}
+
+#centralNotice .frb-footer-message {
+    flex: 1 1 100%;
+    max-width: calc(100% - 160px);
+    display: inline-block;
+    padding-right: 45px;
+}
+
+#centralNotice .frb-footer-button {
+    display: inline-block;
+}
+
+#centralNotice .frb-footer-button .frb-already-donated-button {
+    display: inline-block;
+}
+
+@media (max-width: 1160px) {
+    #centralNotice .frb-smallprint,
+#centralNotice .frb-footer-legal {
+        font-size: 10px;
+    }
+}
+
+/* --- Disable I already donated --- */
+#centralNotice .frb.frb-iad-disabled .frb-iad {
+    display: none;
+}
+
+/* --- Show and Hiding (Minimize and Maximize) --- */
+
+#centralNotice .frb-nag-btns {
+    display: flex;
+    flex: 1 0 0;
+}
+
+#centralNotice button.frb-nag-btn {
+    flex: 1 0 0;
+    margin: 0 8px;
+    padding: 6px;
+    min-height: 48px;
+    background-color: white;
+    border: 1px solid var(--frb-button-border);
+    border-radius: 2px;
+    outline: 0;
+    color: var(--wmui-base0);
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1.3;
+    transition: all 100ms;
+    cursor: pointer;
+}
+
+@media all and (min-width: 1100px) {
+    #centralNotice button.frb-nag-btn {
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    #centralNotice button.frb-nag-btn {
+        font-size: 16px;
+    }
+}
+
+#centralNotice button.frb-nag-btn:hover {
+    transform: scale(1.043478);
+}
+
+#centralNotice #nag-yes-btn {
+    font-weight: bold;
+    background-color: var(--frb-submit);
+    border: 1px solid var(--frb-submit);
+    color: white;
+}
+
+#centralNotice #nag-yes-btn:focus {
+    box-shadow: inset 0 0 0 1px var(--frb-submit), inset 0 0 0 2px var(--wmui-base100);
+}
+
+#centralNotice .frb-prevent-page-jump {
+    display: none;
+}
+
+/* -- Submit/"Donate now" button -- */
+
+#centralNotice .frb .frb-submit {
+    height: 52px;
+    display: inline-block;
+    cursor: default;
+    margin: 4px 4px 0;
+    padding: 5px 6px;
+    width: calc(100% - 8px);
+    background-color: var(--wmui-base100);
+    border: 1px solid var(--wmui-base70);
+    border-radius: 2px;
+    color: rgba(84,89,93,0.2);
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+    word-break: keep-all; /* T259535 */
+    line-height: 1.3;
+    opacity: 0.5;
+}
+
+#centralNotice .frb .frb-submit.active {
+    background-color: var(--frb-submit);
+    border-color: var(--frb-submit);
+    color: var(--wmui-base100);
+    cursor: pointer;
+    opacity: 1;
+}
+
+#centralNotice .frb .frb-submit.active:hover {
+    background-color: var(--frb-submit-hover);
+    border-color: var(--frb-submit-hover);
+}
+
+#centralNotice .frb-submit-txt-donate,
+#centralNotice .frb-submit-txt-onetime,
+#centralNotice .frb-submit-txt-monthly,
+#centralNotice .frb-submit-txt-annual {
+    display: none;
+}
+
+#centralNotice #frb-form[data-frequency="onetime"] .frb-submit-txt-onetime,
+#centralNotice #frb-form[data-frequency="monthly"] .frb-submit-txt-monthly,
+#centralNotice #frb-form[data-frequency="annual"] .frb-submit-txt-annual {
+    display: inline;
+}
+
+#centralNotice .frb-payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#centralNotice .frb-payment-options .frb-button {
+    min-width: 33%;
+}
+
+/* For 4 payment options, 2+2 */
+#centralNotice .frb-payment-options .frb-button:first-child:nth-last-child(4),
+#centralNotice .frb-payment-options .frb-button:first-child:nth-last-child(4) ~ .frb-button {
+    min-width: 50%;
+}
+
+/* For 5 payment options, 2+3. Size 2nd button to account for Trustly being hidden sometimes */
+#centralNotice .frb-payment-options .frb-button:nth-child(2):nth-last-child(4) {
+    min-width: 50%;
+}
+
+#centralNotice .frb-methods .frb-button,
+#centralNotice .frb-optin .frb-button {
+    flex: 1 0 0;
+    padding: 4px;
+}
+
+#centralNotice .frb-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 52px;
+    padding: 0 4px;
+    color: var(--frb-button-text);
+    background-color: var(--frb-button);
+    border: 1px solid var(--frb-button-border);
+    border-radius: 2px;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#centralNotice .frb-label:hover {
+    background-color: var(--frb-button-hover);
+}
+
+#centralNotice .frb-radio:disabled + .frb-label:hover {
+    background-color: var(--frb-button);
+}
+
+#centralNotice .frb-radio:checked + .frb-label {
+    background-color: var(--frb-button-selected) !important;
+    border-color: var(--frb-button-border-selected);
+    color: var(--frb-button-selected-text);
+}
+
+#centralNotice .frb-radio:focus + .frb-label,
+#centralNotice #frb-rml-email:focus {
+    box-shadow: inset 0 0 0 1px var(--frb-radio);
+    border-color: var(--frb-radio);
+}
+
+#centralNotice .frb-radio:focus:checked + .frb-label {
+    box-shadow: inset 0 0 0 1px var(--frb-button-selected), inset 0 0 0 2px var(--wmui-base100);
+}
+
+#centralNotice .frb-radio:checked + .frb-label svg.white-on-select {
+    filter: brightness(0) invert(1);
+}
+
+/* Error messages */
+#centralNotice .frb-error {
+    display: none;
+    margin: 5px 0 5px 5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--frb-error);
+}
+
+#centralNotice .frb-form-wrapper fieldset.frb-haserror .error-highlight,
+#centralNotice .frb-form-wrapper fieldset.frb-haserror legend::before {
+    color: var(--frb-error);
+    font-weight: bold;
+}
+
+/* Steps */
+#centralNotice #frb-form .frb-step {
+    position: absolute;
+    top: 0;
+    padding-top: 24px;
+    width: 300px;
+    margin-left: 100%; /* Start hidden */
+    visibility: hidden; /* Prevent tabbing to inputs */
+}
+body.rtl #centralNotice #frb-form .frb-step {
+    margin-left: 0;
+    margin-right: 100%;
+}
+
+#centralNotice #frb-form .frb-step-1 {
+    position: relative;
+    margin-left: 0;
+    padding-top: 0;
+    visibility: visible;
+}
+body.rtl #centralNotice #frb-form .frb-step-1 {
+    margin-right: 0;
+}
+#centralNotice #frb-form .frb-step-optin {
+    padding-top: 45px;
+}
+
+/*
+    Responsive
+*/
+@media (max-width: 1200px) {
+    #centralNotice .frb-footer {
+        display: block;
+    }
+    #centralNotice .frb-footer-message {
+        display: block;
+        padding-right: 0;
+        max-width: 100%;
+    }
+    #centralNotice .frb-already-donated-text {
+        font-size: 14px;
+    }
+
+}
+
+/* wmf identity */
+
+#centralNotice .frb-wmf-identity {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 100%;
+    max-width: 100%;
+    clear: both;
+    color: var(--wmui-base100);
+    display: flex;
+    justify-content: center;
+    transform: translateX(50%);
+    height: 25px;
+}
+
+#centralNotice .frb-wmf-identity-logo {
+    max-width: 60px;
+    flex: 0 0 60px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 25px;
+}
+
+#centralNotice .frb-wmf-identity-logo svg {
+    width: 100%;
+    height: auto;
+}
+
+#centralNotice .frb-wmf-identity-logo svg path:first-child {
+    fill: var(--w25-w-color);
+}
+
+@media (max-width: 859px) {
+    #centralNotice .frb-wmf-identity {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    #centralNotice .frb-wmf-identity-logo {
+        flex: 0 0 auto;
+    }
+}
+
+#centralNotice .frb-wmf-identity-message {
+    flex: 0 1 auto;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: var(--frb-message);
+}
+
+#centralNotice .frb-wmf-identity-message p {
+    margin: 0;
+    font-size: 13px;
+}
+
+#centralNotice .frb-wmf-identity-message strong {
+    font-family: 'Montserrat', -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Inter','Helvetica','Arial',sans-serif;
+    font-weight: bold;
+}
+
+/* screen reader visibility */
+#centralNotice .sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+        clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+/* -- Dialogs -- */
+
+#centralNotice .frb-dialog {
+    display: none; /* needed for unsupported browsers */
+    background: var(--frb-main-background);
+    border: 1px solid var(--frb-button-border);
+    border-radius: 2px;
+    box-shadow: 0 2px 2px #0003;
+    width: 90%;
+    max-width: 600px;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+#centralNotice .frb-dialog[open] {
+    display: block;
+}
+
+#centralNotice .frb-dialog::backdrop {
+    background: var(--frb-dialog-backdrop);
+}
+
+#centralNotice .frb-dialog-title {
+    font-size: 17px;
+    color: var(--frb-body);
+    font-weight: bold;
+    border: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#centralNotice .frb-dialog-text {
+    font-size: 15px;
+    line-height: 1.44;
+    margin-bottom: 20px;
+    max-width: 530px;
+}
+
+@media (min-width: 720px) {
+    #centralNotice .frb-dialog {
+        padding: 40px;
+    }
+}
+
+/* -- I already donated -- */
+
+#centralNotice .frb-iad-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#centralNotice .frb-iad-buttons button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 2px;
+    border: solid 1px var(--frb-dialog-button-border);
+    background-color: var(--frb-dialog-button);
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--frb-dialog-button-text);
+    cursor: pointer;
+}
+
+#centralNotice .frb-iad-buttons button:hover {
+    background-color: var(--frb-dialog-button-hover);
+    border-color: var(--frb-dialog-button-border-hover);
+    color: var(--frb-dialog-button-text-hover);
+}
+
+#centralNotice .frb-iad-buttons button.frb-dialog-simple-close {
+    color: var(--frb-link);
+}
+
+@media (min-width: 720px) {
+    #centralNotice #frb-dialog-iad {
+        text-align: center;
+    }
+
+    #centralNotice .frb-iad-buttons button {
+        margin: 0 8px;
+        width: 165px;
+    }
+}
+
+#centralNotice .frb-iad-dialog-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 0 20px;
+}
+
+#centralNotice .frb-iad-dialog-header img {
+    flex: 0 1 auto;
+    max-width: 16%;
+    height: auto;
+}
+
+/* --- Maybe later --- */
+
+#centralNotice .frb-rml-disabled .frb-rml,
+#centralNotice .frb-rml-disabled .frb-rml-link,
+#centralNotice .frb-rml-disabled #nag-rml-btn {
+    display: none;
+}
+
+#centralNotice .frb-rml-form-legend {
+    display: block;
+    margin: 0 0 4px;
+    padding: 0;
+    font-weight: normal;
+    text-align: inherit;
+    font-size: 14px;
+    line-height: 1.2142857143;
+    color: var(--frb-muted);
+}
+
+#centralNotice .frb-rml-form input {
+    width: 100%;
+    padding: 4px 8px;
+    border: 1px solid var(--wmui-base50);
+    border-radius: 2px;
+    color: var(--frb-body);
+    font-size: 16px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+#centralNotice #frb-rml-phone.frb-haserror,
+#centralNotice #frb-rml-email.frb-haserror {
+    border-color: var(--frb-error) !important;
+    box-shadow: inset 0 0 0 1px var(--frb-error) !important;
+}
+
+#centralNotice #frb-dialog-rml .frb-error {
+    text-align: left;
+    margin: 2px 0 0 !important;
+}
+
+#centralNotice .frb-dialog .frb-submit {
+    margin: 0;
+    width: 100%;
+}
+
+#centralNotice .frb-dialog .frb-rml-form-phone .frb-submit {
+    margin-top: 20px;
+}
+
+#centralNotice .frb-dialog .frb-smallprint {
+    margin-top: 20px;
+}
+
+#centralNotice .frb-rml-ty {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.44;
+}
+
+/* --- Monthly Pitch --- */
+
+/* latin-ext */
+@font-face {
+    font-family: 'Caveat Brush';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('https://upload.wikimedia.org/wikipedia/donate/5/51/Caveat-brush-v6-latin-ext-regular.woff2') format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Caveat Brush';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('https://upload.wikimedia.org/wikipedia/donate/7/75/Caveat-brush-v6-latin-regular.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* greek (Mynerve) */
+@font-face {
+    font-family: 'Mynerve';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(https://upload.wikimedia.org/wikipedia/donate/6/6a/Mynerve-Greek.woff2) format('woff2');
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+#centralNotice .frb-recurring-pitch,
+#centralNotice .frb-recurring-pitch-thanks {
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--frb-link);
+    font-family: 'Caveat Brush', sans-serif;
+    position: relative;
+}
+
+html[lang="el"] #centralNotice .frb-recurring-pitch,
+html[lang="el"] #centralNotice .frb-recurring-pitch-thanks {
+    font-family: 'Mynerve', sans-serif;
+    font-size: 16px;
+}
+
+#centralNotice .frb-recurring-pitch {
+    text-align: right;
+    color: var(--wmui-red-dark);
+}
+
+#centralNotice .frb-recurring-bar {
+    width: 66%;
+    height: 8px;
+    position: absolute;
+    top: -8px;
+    right: -2px;
+}
+
+#centralNotice .frb-recurring-pitch-thanks {
+    display: none;
+    text-align: center;
+    padding-left: 30px;
+}
+
+#centralNotice .frb-recurring-pitch-thanks-heart {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: -4px;
+}
+
+#centralNotice #frb-form:not([data-frequency="onetime"]) .frb-recurring-pitch { display: none; }
+#centralNotice #frb-form:not([data-frequency="onetime"]) .frb-recurring-pitch-thanks { display: block; }
+
+#centralNotice .form-recurring-disabled .frb-recurring-pitch {
+    opacity: 0.4;
+}
+
+/* --- Night Mode Adjustments --- */
+
+html.skin-theme-clientpref-night #centralNotice .frb-label svg.white-on-select {
+    filter: brightness(0) invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+    html.skin-theme-clientpref-os #centralNotice .frb-label svg.white-on-select {
+        filter: brightness(0) invert(1);
+    }
+}
+
+
+#centralNotice .frb-fireworks {
+    margin: 0 auto;
+    max-width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200px);
+    z-index: 100;
+}
+
+#centralNotice .frb-fireworks > .boom1,
+#centralNotice .frb-fireworks > .boom2 {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff;
+    animation: 1s bang ease-out 1 backwards, 1s gravity ease-in 1 backwards, 5s position linear 1 backwards;
+}
+
+#centralNotice .frb-fireworks > .boom2 {
+    animation-delay: 0.3s, 1s, 1s;
+    animation-duration: 1.25s, 1.25s, 8.25s;
+}
+
+@keyframes bang {
+    to {
+        box-shadow: -169px -95.6666666667px #009dff, -230px -59.6666666667px #00ff1e, -155px -248.6666666667px #a600ff, -39px -301.6666666667px #ffea00, -172px -343.6666666667px #00ff04, -195px -98.6666666667px #d0ff00, -40px -23.6666666667px #ff00b3, -197px 67.3333333333px #e100ff, 250px -38.6666666667px #6600ff, 217px -118.6666666667px deepskyblue, -242px -48.6666666667px #40ff00, 228px -390.6666666667px #ff6600, 246px -8.6666666667px #4800ff, 193px -305.6666666667px #00ff51, 120px -294.6666666667px #3cff00, -24px -386.6666666667px #ff001e, 71px 65.3333333333px #00ffb3, 197px -257.6666666667px #0044ff, 197px 19.3333333333px #ff4800, -72px -43.6666666667px #ff0080, 163px -108.6666666667px #99ff00, -207px -65.6666666667px #00ffbf, -89px 2.3333333333px #6200ff, -167px -361.6666666667px #00ff55, 219px 38.3333333333px #00ff55, -177px -247.6666666667px #00ff6a, 176px 43.3333333333px #bbff00, -60px -131.6666666667px #ff00a6, -236px -296.6666666667px #00ffd0, 223px -410.6666666667px #ff0088, 92px -377.6666666667px #00ff1e, 91px -383.6666666667px #ff0040, 88px -281.6666666667px #001aff, 41px 49.3333333333px #00ffd0, -112px -96.6666666667px #6a00ff, 230px -121.6666666667px #c8ff00, -203px -48.6666666667px #00ff4d, -8px -373.6666666667px #5e00ff, 154px -366.6666666667px #ff0048, -224px 71.3333333333px #e600ff, 55px 73.3333333333px #ffbb00, 248px 60.3333333333px #88ff00, -191px -394.6666666667px #005eff, -10px -244.6666666667px #00ffe6, 40px -128.6666666667px yellow, 45px -205.6666666667px #00ff04, -55px -18.6666666667px #0080ff, 79px -200.6666666667px #04ff00, 172px -124.6666666667px #00e6ff, -177px 31.3333333333px #c4ff00, -63px -36.6666666667px #09ff00;
+    }
+}
+
+@keyframes gravity {
+    to {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+}
+
+#centralNotice .frb-submit.frb-rml-btn {
+    margin-bottom: 10px;
+}
+
+#centralNotice .frb-rml-form input#frb-rml-phone {
+    width: 150px;
+    display: block;
+}
+
+#centralNotice #frb-rml-form-phone .frb-smallprint {
+    margin: 20px 0;
+}
+
+/* WP25 styles */
+#centralNotice .frb-decoration {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+#centralNotice .frb-decoration.frb-decoration-bottom-left {
+    bottom: -6px;
+    left: -6px;
+    border-radius: 0 0 0 .75em;
+    overflow: hidden;
+    width: 235px;
+}
+
+#centralNotice .frb-decoration.frb-decoration-top-right {
+    top: -6px;
+    right: -6px;
+    border-radius: 0 0.75em 0 0;
+    overflow: hidden;
+    width: 212px;
+}
+
+#centralNotice .frb-header,
+#centralNotice .frb-message-content,
+#centralNotice .frb-wmf-identity {
+    z-index: 2;
+}
+
+#centralNotice .frb-decoration.frb-decoration-bottom-left svg {
+    position: relative;
+    top: 8px;
+}
+
+#centralNotice .frb-decoration svg {
+    width: 100%;
+    height: auto;
+}
+
+#centralNotice .frb-decoration svg path {
+    fill: var(--w25-puzzle-piece);
+}
+
+
+/* preferred amount styles */
+
+#centralNotice .frb-amounts .frb-highlight {
+    position: relative;
+}
+
+#centralNotice .frb-amounts .frb-numbered {
+    padding-right: 90px;
+}
+
+#centralNotice .frb-amounts .frb-highlight .frb-amount-highlight {
+    display: block;
+    padding: 5px;
+    font-size: 13px;
+    max-height: 36px; /* never more than 2 lines to avoid overlapping close button */
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    background: #fcd53f;
+    color: #000;
+    width: min-content;
+    min-width: 85px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: all 0.5s ease;
+}
+
+#centralNotice .frb-amounts .frb-highlight .frb-amount-highlight::after {
+    position: absolute;
+    content: " ";
+    left: 43%;
+    bottom: 0;
+    margin: 0 0 -20px 0;
+    border: 10px solid transparent;
+    border-top-color: #fcd53f;
+    pointer-events: none;
+    transform: translateX(-50%);
+}
+
+#centralNotice .frb-amounts .frb-highlight .frb-amount-highlight.frb-amount-highlight-hide {
+    display: none;
+}
+
+#centralNotice .frb-amounts .avg-donation-once {
+    /* Avoid overlapping with amount highlight */
+    display: block;
+    padding-right: 10px;
+}
+
+/* New style for removing preferred amount for recurring */
+#centralNotice #frb-form:not([data-frequency="onetime"]) .frb-amount-highlight { display: none; }
+#centralNotice #frb-form:([data-frequency="onetime"]) .frb-amount-highlight { display: block; }
+
+/* -- Where your donation goes -- */
+#centralNotice #frb-dialog-wydg {
+    max-width: 948px;
+}
+#centralNotice #frb-dialog-wydg .frb-dialog-text {
+    max-width: 100%;
+}
+#centralNotice #frb-dialog-wydg .wydg-columns {
+    display: block;
+}
+
+@media (min-width: 960px) {
+    #centralNotice #frb-dialog-wydg .wydg-columns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+#centralNotice .wydg-pie-chart {
+    flex: 0 0 360px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+#centralNotice .wydg-columns > div {
+    flex: 1 1 auto;
+}
+
+#centralNotice .wydg-section {
+    border: 1px solid var(--frb-button-border);
+    border-left: 8px solid;
+    border-radius: 2px;
+    padding: 15px 15px;
+    margin-top: 15px;
+}
+
+#centralNotice .wydg-section summary {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#centralNotice .wydg-section summary:hover {
+    text-decoration: underline;
+}
+
+#centralNotice .wydg-section p {
+    margin-top: 10px;
+}
+
+#centralNotice .wydg-section summary span {
+    float: right;
+    margin-left: 0.5em;
+}
+
+#centralNotice .wydg-technology { border-left-color: #71d1b3; }
+#centralNotice .wydg-volunteers { border-left-color: #049dff; }
+#centralNotice .wydg-general { border-left-color: #e679a6; }
+#centralNotice .wydg-fundraising { border-left-color: #f9dde9; }
+
+/* iad store styles */
+
+#centralNotice #frb-dialog-iad {
+    text-align: left;
+    padding: 60px 180px 40px 60px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280.27 594.55'%3E%3Cdefs%3E%3Cstyle%3E.st0,.st1%7Bfill:%23e679a6%7D.st1%7Bstroke:%23fff%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_1_copy_2'%3E%3Cpath d='M16.7 197.51h21.56c.99 0 1.85.57 2.24 1.47.39.91.22 1.93-.46 2.65l-.23.26c-1.11 1.29-1.68 2.75-1.68 4.25 0 2.16 1.2 4.18 3.22 5.67 2.03 1.49 4.85 2.43 7.99 2.43s5.97-.94 7.99-2.43c2.03-1.49 3.22-3.5 3.22-5.67 0-1.6-.64-3.16-1.91-4.51l-.12-.14a2.45 2.45 0 0 1-.34-2.51c.39-.91 1.26-1.47 2.25-1.47h21.46v-21.56c0-.99-.83-1.62-1.63-1.62-.39 0-.76.14-1.07.42-1.47 1.35-3.2 2.08-5.02 2.08-2.53 0-4.77-1.42-6.36-3.6-1.59-2.19-2.56-5.18-2.56-8.46s.97-6.27 2.56-8.46c1.59-2.19 3.83-3.6 6.36-3.6 1.82 0 3.56.74 5.02 2.08.31.28.67.42 1.07.42.79 0 1.63-.63 1.63-1.62v-21.37H60.32c-.6.05-1.11.41-1.36.97-.26.6-.15 1.25.29 1.73 1.35 1.47 2.09 3.21 2.09 5.03 0 2.53-1.42 4.78-3.6 6.37-2.19 1.59-5.18 2.56-8.45 2.56s-6.26-.97-8.45-2.56c-2.19-1.59-3.6-3.84-3.6-6.37 0-1.82.74-3.57 2.09-5.03.44-.48.55-1.13.29-1.73-.26-.6-.83-.97-1.48-.97H16.69v21.52c0 1.54-1.27 2.45-2.46 2.45-.62 0-1.2-.23-1.66-.66-1.35-1.26-2.9-1.9-4.5-1.9-2.16 0-4.17 1.2-5.66 3.23-1.49 2.03-2.43 4.86-2.43 8s.94 5.97 2.43 8c1.4 1.9 3.25 3.07 5.26 3.21h.4c1.59.01 3.15-.63 4.49-1.89.46-.43 1.03-.66 1.66-.66s1.24.24 1.7.67l.18.18c.38.44.59 1 .59 1.6v21.52ZM57.94 530.78c0-.63.25-1.24.67-1.7.46-.49 1.1-.76 1.78-.76h21.5v-21.58c0-.99.57-1.85 1.47-2.25.91-.39 1.93-.22 2.65.46 1.35 1.26 2.91 1.91 4.5 1.91 2.16 0 4.17-1.2 5.66-3.23 1.49-2.03 2.43-4.86 2.43-8s-.94-5.97-2.43-8c-1.47-2.01-3.46-3.2-5.6-3.23h-.06c-1.6 0-3.15.64-4.5 1.91-.72.68-1.74.85-2.65.46-.9-.39-1.47-1.26-1.47-2.25v-21.48H60.35c-.99 0-1.62.83-1.62 1.63 0 .39.14.76.42 1.07 1.35 1.47 2.08 3.21 2.08 5.03 0 2.53-1.42 4.78-3.6 6.37-2.19 1.59-5.18 2.56-8.45 2.56s-6.27-.97-8.45-2.56c-2.19-1.59-3.6-3.84-3.6-6.37 0-1.82.73-3.56 2.08-5.03.28-.31.42-.67.42-1.07 0-.8-.63-1.63-1.62-1.63H16.66v21.47c0 .66.37 1.22.97 1.48s1.25.15 1.73-.29c1.47-1.35 3.21-2.09 5.03-2.09 2.53 0 4.77 1.42 6.36 3.6 1.59 2.19 2.56 5.18 2.56 8.46s-.97 6.27-2.56 8.46c-1.59 2.19-3.84 3.6-6.36 3.6-1.82 0-3.56-.74-5.03-2.09-.48-.44-1.13-.55-1.73-.29-.6.26-.97.83-.97 1.48v21.47h21.5c1.54 0 2.45 1.27 2.45 2.46 0 .62-.23 1.2-.66 1.66l-.23.26c-1.11 1.29-1.67 2.75-1.67 4.24 0 2.17 1.2 4.18 3.22 5.67 2.03 1.49 4.85 2.43 7.99 2.43s5.97-.94 7.99-2.43c2.03-1.49 3.23-3.5 3.23-5.67 0-1.59-.64-3.15-1.9-4.5-.43-.46-.66-1.04-.66-1.66Z' class='st0'/%3E%3Cpath d='M58.21 66.59c.38-.87 1.19-1.41 2.12-1.45h22.56v22.32c0 .99.83 1.62 1.63 1.62.39 0 .76-.14 1.07-.42 1.47-1.35 3.2-2.08 5.02-2.08 2.53 0 4.77 1.42 6.37 3.6 1.59 2.19 2.56 5.18 2.56 8.46s-.97 6.27-2.56 8.46c-1.59 2.19-3.84 3.6-6.37 3.6-1.82 0-3.56-.74-5.02-2.08-.31-.28-.67-.42-1.07-.42-.79 0-1.63.63-1.63 1.62v21.37h21.45c.65 0 1.22-.37 1.48-.97l.04-.11c.2-.57.08-1.17-.33-1.62-1.35-1.47-2.09-3.21-2.09-5.03 0-2.53 1.41-4.78 3.6-6.37 2.19-1.59 5.18-2.56 8.45-2.56s6.26.97 8.45 2.56c2.19 1.59 3.6 3.84 3.6 6.37 0 1.83-.74 3.57-2.09 5.03-.44.48-.55 1.13-.29 1.73l.05.11c.28.54.81.86 1.43.86h22.18v22.74c-.09 1.44-1.3 2.29-2.44 2.29-.62 0-1.2-.23-1.66-.66-1.35-1.26-2.9-1.9-4.49-1.9-2.16 0-4.17 1.2-5.66 3.23-1.49 2.03-2.43 4.86-2.43 8s.94 5.97 2.43 8c1.4 1.9 3.25 3.07 5.26 3.21h.4c1.59.01 3.15-.63 4.49-1.89.46-.43 1.03-.66 1.66-.66s1.24.24 1.7.67l.17.18c.38.44.59 1 .59 1.6v5.57h-.02v16.73h-22.29c-.99 0-1.85-.57-2.24-1.47-.39-.91-.22-1.93.46-2.65 1.26-1.35 1.91-2.91 1.91-4.51 0-2.16-1.2-4.18-3.22-5.67-2.03-1.49-4.85-2.43-7.99-2.43s-5.97.94-7.99 2.43c-2.03 1.49-3.23 3.5-3.23 5.67 0 1.6.65 3.16 1.91 4.51.67.72.85 1.74.46 2.65-.39.91-1.26 1.47-2.25 1.47H82.89v21.56c0 .99.83 1.62 1.63 1.62.39 0 .76-.14 1.07-.42 1.47-1.35 3.2-2.08 5.02-2.08 2.53 0 4.77 1.42 6.37 3.6 1.59 2.19 2.56 5.18 2.56 8.46s-.97 6.27-2.56 8.46c-1.59 2.19-3.84 3.6-6.37 3.6-1.82 0-3.56-.74-5.02-2.08-.31-.28-.67-.42-1.07-.42-.79 0-1.63.63-1.63 1.62v21.37h21.45c.65 0 1.22-.37 1.48-.97l.04-.11c.2-.57.08-1.17-.33-1.62-1.35-1.47-2.09-3.21-2.09-5.03 0-2.53 1.41-4.78 3.6-6.37 2.19-1.59 5.18-2.56 8.45-2.56s6.26.97 8.45 2.56c2.19 1.59 3.6 3.84 3.6 6.37 0 1.82-.74 3.57-2.09 5.03-.44.48-.55 1.13-.29 1.73l.05.11c.28.54.81.86 1.43.86h21.45v-.02h22.23c1.54 0 2.45 1.27 2.45 2.46 0 .62-.23 1.2-.66 1.66l-.23.26c-1.11 1.29-1.67 2.75-1.67 4.25 0 2.16 1.2 4.18 3.22 5.67 2.03 1.49 4.85 2.43 7.99 2.43s5.96-.94 7.99-2.43c2.03-1.49 3.22-3.5 3.22-5.67 0-1.59-.64-3.15-1.9-4.5-.43-.46-.66-1.03-.66-1.66s.24-1.24.67-1.7c.46-.49 1.1-.76 1.78-.76h21.5V242c0-.99.57-1.85 1.47-2.25.91-.39 1.93-.22 2.65.46 1.35 1.26 2.91 1.91 4.5 1.91 2.16 0 4.17-1.2 5.66-3.23 1.49-2.03 2.43-4.86 2.43-8s-.94-5.97-2.43-8c-1.47-2.01-3.46-3.2-5.6-3.23h-.06c-1.6 0-3.15.64-4.51 1.91-.72.68-1.74.85-2.65.46-.9-.39-1.47-1.26-1.47-2.25V198.3h-.04v-.75h22.59c.98 0 1.62-.83 1.62-1.63 0-.4-.14-.76-.42-1.07-1.35-1.47-2.08-3.21-2.08-5.03 0-2.53 1.41-4.78 3.6-6.37 2.19-1.59 5.18-2.56 8.45-2.56s6.27.97 8.45 2.56c2.19 1.59 3.6 3.84 3.6 6.37 0 1.82-.74 3.56-2.08 5.03-.28.31-.42.67-.42 1.07 0 .8.63 1.63 1.62 1.63h21.35V0H16.7v21.36c0 1.54-1.27 2.45-2.46 2.45-.62 0-1.2-.23-1.66-.66-1.35-1.26-2.9-1.9-4.5-1.9-2.16 0-4.17 1.2-5.66 3.23-1.49 2.03-2.43 4.86-2.43 8s.94 5.97 2.43 8c1.4 1.9 3.25 3.07 5.26 3.21h.4c1.59.01 3.15-.63 4.49-1.89.46-.43 1.03-.66 1.66-.66s1.24.25 1.7.67l.18.18c.38.44.59 1 .59 1.6v21.54h21.69c.93.05 1.74.59 2.12 1.45.39.91.22 1.93-.46 2.65l-.23.26c-1.11 1.29-1.68 2.75-1.68 4.25 0 2.16 1.2 4.18 3.22 5.67 2.03 1.49 4.85 2.43 7.99 2.43s5.97-.94 7.99-2.43c2.03-1.49 3.22-3.5 3.22-5.67 0-1.6-.64-3.16-1.91-4.51-.67-.72-.85-1.74-.46-2.65ZM258.77 264.64c-1.54 0-2.45-1.27-2.45-2.46 0-.62.23-1.2.66-1.66l.23-.25c1.11-1.29 1.67-2.75 1.67-4.25 0-2.16-1.2-4.18-3.22-5.67-2.03-1.49-4.85-2.43-7.99-2.43s-5.96.94-7.99 2.43c-2.03 1.49-3.22 3.5-3.22 5.67 0 1.59.64 3.15 1.9 4.5.43.46.66 1.04.66 1.66s-.24 1.24-.67 1.7c-.46.49-1.1.76-1.78.76h-21.5v21.58c0 .99-.57 1.85-1.47 2.25l-.17.07c-.86.3-1.8.11-2.48-.53-1.35-1.26-2.91-1.91-4.5-1.91-2.16 0-4.17 1.2-5.66 3.23-1.49 2.03-2.43 4.86-2.43 8 0 3.14.94 5.97 2.43 8 1.47 2.01 3.46 3.2 5.6 3.22h.06c1.59 0 3.15-.64 4.5-1.91l.14-.12c.71-.57 1.66-.71 2.51-.34.9.39 1.47 1.26 1.47 2.25v21.48h21.54c.98 0 1.62-.83 1.62-1.63 0-.39-.14-.76-.42-1.07-1.35-1.47-2.08-3.21-2.08-5.03 0-2.53 1.41-4.78 3.6-6.37 2.19-1.59 5.18-2.56 8.45-2.56s6.27.97 8.45 2.56c2.19 1.59 3.6 3.84 3.6 6.37 0 1.82-.74 3.56-2.08 5.03-.28.31-.42.67-.42 1.07 0 .8.63 1.63 1.62 1.63h21.35v-65.27h-21.5ZM104.41 529.42h-21.5V551c0 .99-.57 1.85-1.47 2.25l-.17.07c-.86.3-1.8.11-2.48-.53-1.35-1.26-2.91-1.91-4.5-1.91-2.16 0-4.17 1.2-5.66 3.23-1.49 2.03-2.43 4.86-2.43 8s.94 5.97 2.43 8c1.47 2.01 3.46 3.2 5.6 3.23h.06c1.6 0 3.15-.64 4.5-1.91l.14-.12c.71-.57 1.66-.71 2.51-.34.9.39 1.47 1.26 1.47 2.25v21.34h197.36V397.04h-21.5c-1.54 0-2.45-1.27-2.45-2.46 0-.62.23-1.2.66-1.66l.23-.26c1.11-1.29 1.67-2.75 1.67-4.25 0-2.16-1.2-4.18-3.22-5.67-2.03-1.49-4.85-2.43-7.99-2.43s-5.96.94-7.99 2.43c-2.03 1.49-3.22 3.5-3.22 5.67 0 1.59.64 3.15 1.9 4.5.43.46.66 1.03.66 1.66s-.24 1.24-.67 1.7c-.46.49-1.1.76-1.78.76H231v-.02h-16.92v-16.7h-.02v-5.97c0-.99.57-1.85 1.47-2.25.91-.39 1.93-.22 2.65.46 1.35 1.26 2.91 1.91 4.5 1.91 2.16 0 4.17-1.2 5.66-3.23 1.49-2.03 2.43-4.86 2.43-8s-.94-5.97-2.43-8c-1.47-2.01-3.46-3.2-5.6-3.22h-.06c-1.6 0-3.15.64-4.51 1.91-.72.68-1.74.85-2.65.46-.9-.39-1.47-1.26-1.47-2.25v-21.48h-21.72c-.88.1-1.44.88-1.44 1.63 0 .39.14.76.42 1.07 1.35 1.47 2.08 3.21 2.08 5.03 0 2.53-1.42 4.78-3.6 6.37-2.19 1.59-5.18 2.56-8.45 2.56s-6.27-.97-8.45-2.56c-2.19-1.59-3.6-3.84-3.6-6.37 0-1.82.73-3.56 2.08-5.03.28-.31.42-.67.42-1.07 0-.8-.63-1.63-1.62-1.63h-21.35v21.47c0 .66.37 1.22.97 1.48s1.25.15 1.73-.29c1.47-1.35 3.21-2.09 5.03-2.09 2.53 0 4.77 1.42 6.36 3.6 1.59 2.19 2.56 5.18 2.56 8.46s-.97 6.27-2.56 8.46c-1.59 2.19-3.83 3.6-6.36 3.6-1.82 0-3.56-.74-5.03-2.09-.48-.44-1.13-.55-1.73-.29-.6.26-.97.83-.97 1.48v22.55h-18.05v.02h-4.16c-1.54 0-2.45-1.27-2.45-2.46 0-.62.23-1.2.66-1.66l.23-.26c1.11-1.29 1.67-2.75 1.67-4.25 0-2.16-1.2-4.18-3.22-5.67-2.03-1.49-4.85-2.43-7.99-2.43s-5.97.94-7.99 2.43c-2.03 1.49-3.22 3.5-3.22 5.67 0 1.59.64 3.15 1.9 4.5.43.46.66 1.03.66 1.66s-.25 1.24-.67 1.7c-.46.49-1.1.76-1.78.76h-21.5v21.58c0 .99-.57 1.85-1.47 2.25l-.17.07c-.86.3-1.8.11-2.48-.52-1.35-1.26-2.91-1.91-4.5-1.91-2.16 0-4.17 1.2-5.66 3.23-1.49 2.03-2.43 4.86-2.43 8s.94 5.97 2.43 8c1.47 2.01 3.46 3.2 5.6 3.22h.06c1.6 0 3.15-.64 4.5-1.91l.14-.12c.71-.57 1.66-.7 2.51-.34l.16.08c.81.42 1.31 1.24 1.31 2.17v21.48h21.54c.99 0 1.62-.83 1.62-1.63 0-.4-.14-.76-.42-1.07-1.35-1.47-2.08-3.21-2.08-5.03 0-2.53 1.41-4.78 3.6-6.37 2.19-1.59 5.18-2.56 8.45-2.56s6.26.97 8.45 2.56c2.19 1.59 3.6 3.84 3.6 6.37 0 1.82-.74 3.56-2.08 5.03-.28.31-.42.67-.42 1.07 0 .8.63 1.63 1.62 1.63h22.06v22.22c0 .66.37 1.22.97 1.48s1.25.15 1.73-.29c1.47-1.35 3.21-2.09 5.03-2.09 2.53 0 4.77 1.42 6.36 3.6 1.59 2.19 2.56 5.18 2.56 8.46s-.97 6.27-2.56 8.46c-1.59 2.19-3.83 3.6-6.36 3.6-1.82 0-3.56-.74-5.03-2.09-.48-.44-1.13-.55-1.73-.29-.6.26-.97.83-.97 1.48v22.57h-22.21c-1.54 0-2.45-1.27-2.45-2.46 0-.62.23-1.2.66-1.66l.23-.25c1.11-1.29 1.67-2.75 1.67-4.25 0-2.16-1.2-4.18-3.22-5.67-2.03-1.49-4.85-2.43-7.99-2.43s-5.97.94-7.99 2.43c-2.03 1.49-3.22 3.5-3.22 5.67 0 1.59.64 3.15 1.9 4.5.43.46.66 1.04.66 1.66s-.24 1.24-.67 1.7c-.46.49-1.1.76-1.78.76Z' class='st0'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#centralNotice #frb-dialog-iad .frb-dialog-title {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+#centralNotice .frb-w25-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 80px;
+}
+
+#centralNotice .frb-w25-logo svg {
+    width: 100%;
+}
+
+#centralNotice #frb-dialog-iad .frb-dialog-text strong { font-weight: bold;}
+
+#centralNotice .frb-dialog-simple-close {
+    border: none !important;
+    background: none !important;
+    text-decoration: underline;
+    font-size: 14px !important;
+}
+
+/* -- upsell / monthly convert dialog -- */
+#centralNotice #frb-dialog-upsell {
+    margin: auto;
+    text-align: center;
+}
+#centralNotice #frb-dialog-upsell .frb-submit,
+#centralNotice #frb-dialog-upsell .frb-monthly-diff-amt-link {
+    margin: 8px 0 0 0;
+}
+
+#centralNotice .frb-icon-heart path {
+    fill: #900;
+}
+
+#centralNotice .frb .frb-monthly-diff-amt-link {
+    font-size: 15px;
+    line-height: 1.3;
+    color: var(--frb-link);
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    height: 52px;
+}
+
+#centralNotice .frb .frb-monthly-diff-amt-link:hover {
+    color: var(--frb-link-hover);
+}
+
+#centralNotice .frb-step-monthly-diff-amt label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+#centralNotice #frb-amt-monthly-other-input {
+    text-align: center;
+    font-size: 18px;
+    height: 45px;
+    width: 80px;
+    border: 1px solid var(--frb-button-border);
+    border-radius: 2px;
+}
+
+</style>
+
+<div class="frb-prevent-page-jump"></div>
+
+<div class="frb frb-in-article frb-rml-enabled frb-annual-enabled" id="frb-main" style="display: block;" role="region" aria-label="fundraising banner">
+
+    <div class="frb-layout">
+
+        <div class="frb-message">
+            <div class="frb-header">
+                <svg class="frb-message-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"><g fill-rule="nonzero" fill="none"><circle cx="10.492" cy="14.492" r="10.492"></circle><path d="M12.681 11.754l-2.267 7.864c-.125.45-.188.745-.188.885 0 .08.033.156.1.226.066.07.136.105.21.105.125 0 .25-.055.376-.165.332-.273.73-.767 1.194-1.482l.376.22c-1.113 1.94-2.296 2.91-3.55 2.91-.48 0-.86-.135-1.144-.404a1.349 1.349 0 0 1-.426-1.023c0-.273.062-.62.188-1.04l1.537-5.286c.147-.51.221-.892.221-1.15a.566.566 0 0 0-.21-.432c-.14-.125-.332-.188-.575-.188-.11 0-.243.004-.398.011l.144-.442 3.749-.609h.663zm-.685-5.087c.457 0 .842.159 1.156.475.313.318.47.701.47 1.15 0 .45-.16.834-.476 1.15-.317.318-.7.476-1.15.476-.443 0-.822-.158-1.14-.475a1.566 1.566 0 0 1-.475-1.15c0-.45.157-.833.47-1.15a1.549 1.549 0 0 1 1.145-.476z"></path></g></svg>
+                We owe you an explanation.
+                <div class="frb-subheader">
+                    <span class="frb-replaced">6 March</span>: An important update for readers <span class="frb-replaced">in the UK</span>.
+                </div>
+            </div>
+            <div class="frb-message-content">
+                <p>
+                    You deserve an explanation, so please don't skip this 1-minute read. It's <span class="frb-replaced">Friday</span>, <span class="frb-replaced">6 March</span>. Our fundraiser won't last long, but fewer people are seeing our message this month and we might not hit our goal. If you've lost count of how many times you've visited Wikipedia this year, we hope that means it's given you at least <span class="frb-replaced">£2.75</span> of knowledge. If everyone who finds Wikipedia useful gave <span class="frb-replaced">£2.75</span>, we'd hit our goal in a few hours.
+                </p>
+                <p>
+                    It's been 25 years and Wikipedia is still free. It's still created by people, not machines, and we don't run ads or put up paywalls because we're not here to make a profit off your attention. In other words, it's still the internet we were promised.
+                </p>
+                <p>
+                    Less than 2% of our readers donate, so if you've never given and Wikipedia has provided you with at least <span class="frb-replaced">£2.75</span> worth of knowledge, donate today. If you are undecided, remember any contribution helps.
+                </p>
+            </div>
+
+            <div class="frb-wmf-identity">
+                <div class="frb-wmf-identity-logo">
+                    <svg viewBox="0 0 433 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M234.124 2.56165C234.124 3.39471 233.832 4.14445 233.29 4.85255C232.789 5.56065 232.247 5.89387 231.621 5.89387C226.489 6.39371 222.296 8.03902 219.021 10.8923C215.766 13.6622 212.387 18.9938 208.903 26.9078L155.77 146.389C155.436 147.514 154.435 148.056 152.849 148.056C151.598 148.056 150.638 147.514 149.929 146.389L120.139 84.2015L85.8643 146.389C85.155 147.514 84.1954 148.056 82.9437 148.056C81.4 148.056 80.3987 147.514 79.9189 146.389L27.7244 26.887C24.4701 19.4519 21.028 14.3078 17.3982 11.3921C13.7892 8.41388 8.7408 6.58116 2.29472 5.87306C1.75233 5.87306 1.20994 5.5815 0.730135 5.04001C0.229469 4.41521 0 3.70711 0 2.95736C0 1.02049 0.542395 0.0416301 1.66889 0.0416301C6.32092 0.0416301 11.1815 0.249901 16.2508 0.666431C20.9654 1.08296 25.4088 1.29123 29.581 1.29123C33.7533 1.29123 38.8225 1.08296 44.5802 0.666431C50.609 0.249901 55.9703 0.0416301 60.6224 0.0416301C61.7489 0.0416301 62.2912 0.999668 62.2912 2.95736C62.2912 4.91505 61.9575 5.87306 61.2482 5.87306C56.5962 6.20628 52.9246 7.41421 50.2127 9.41356C47.5842 11.4129 46.249 14.0579 46.249 17.3068C46.249 18.9729 46.7914 21.0556 47.9179 23.5339L91.0378 120.752L115.508 74.5797L92.7067 26.8454C88.6179 18.3273 85.2593 12.8499 82.5891 10.4132C79.9606 7.91407 75.9552 6.39371 70.6148 5.83139C70.1141 5.83139 69.6552 5.53984 69.1545 4.99835C68.7373 4.37355 68.5287 3.66545 68.5287 2.9157C68.5287 0.978833 69.0294 0 69.989 0C74.641 0 78.8967 0.20824 82.7977 0.62477C86.5527 1.0413 90.5372 1.24957 94.772 1.24957C99.0068 1.24957 103.346 1.0413 107.998 0.62477C112.796 0.20824 117.511 0 122.163 0C123.289 0 123.831 0.958006 123.831 2.9157C123.831 4.87339 123.498 5.83139 122.788 5.83139C113.484 6.45619 108.832 9.08035 108.832 13.7247C108.832 15.8073 109.917 19.0354 112.066 23.409L127.169 53.9823L142.168 26.0123C144.255 22.0552 145.298 18.7438 145.298 16.0364C145.298 9.66349 140.646 6.26877 131.341 5.85224C130.507 5.85224 130.09 4.8942 130.09 2.93651C130.09 2.22841 130.298 1.5828 130.716 0.958001C131.133 0.333206 131.55 0.0208151 131.967 0.0208151C135.305 0.0208151 139.415 0.229086 144.255 0.645616C148.907 1.06215 152.745 1.27039 155.707 1.27039C157.856 1.27039 161.027 1.10377 165.199 0.749723C170.477 0.249887 174.899 0.0208151 178.425 0.0208151C179.259 0.0208151 179.677 0.853869 179.677 2.51999C179.677 4.7276 178.926 5.85224 177.382 5.85224C171.979 6.39373 167.598 7.89323 164.26 10.3299C161.006 12.7458 156.896 18.2648 151.973 26.8662L131.967 63.7915L159.045 118.919L199.036 26.0539C200.413 22.6592 201.122 19.5352 201.122 16.7028C201.122 9.91339 196.47 6.3104 187.166 5.89387C186.331 5.89387 185.914 4.93586 185.914 2.97817C185.914 1.02048 186.54 0.062477 187.792 0.062477C191.192 0.062477 195.239 0.270717 199.87 0.687247C204.168 1.10378 207.777 1.31205 210.697 1.31205C213.618 1.31205 217.289 1.10378 221.315 0.687247C225.488 0.270717 229.222 0.062477 232.559 0.062477C233.519 0.062477 234.02 0.895531 234.02 2.56165H234.124Z" fill="black"></path>
+                        <path d="M413.025 47.7996C409.124 47.7996 405.349 49.3616 402.115 52.3606C401.322 53.0896 400.342 53.5061 399.278 53.5061C398.214 53.5061 397.129 53.0896 396.337 52.3606C395.502 51.5692 395.022 50.4862 395.022 49.32V0.106934H345.728C344.559 0.106934 343.475 0.565127 342.682 1.41901C341.952 2.21042 341.534 3.27258 341.534 4.35556C341.534 5.43853 341.931 6.37573 342.682 7.18796C345.686 10.4161 347.25 14.1648 347.25 18.0802C347.25 28.7226 335.443 37.3864 320.945 37.3864C306.446 37.3864 294.639 28.7226 294.639 18.0802C294.639 14.1857 296.203 10.4161 299.228 7.18796C299.958 6.39655 300.376 5.41771 300.376 4.35556C300.376 3.29341 299.958 2.21042 299.228 1.41901C298.435 0.585953 297.351 0.106934 296.182 0.106934H246.888V49.32C246.888 50.4862 247.367 51.5692 248.202 52.3606C248.995 53.0896 250.059 53.5061 251.143 53.5061C252.228 53.5061 253.167 53.1104 253.98 52.3606C257.214 49.3616 260.969 47.7996 264.891 47.7996C275.551 47.7996 284.229 59.5874 284.229 74.0618C284.229 88.5363 275.551 100.324 264.891 100.324C260.99 100.324 257.214 98.7621 253.98 95.7631C253.188 95.0341 252.207 94.6176 251.143 94.6176C250.079 94.6176 248.995 95.0341 248.202 95.7631C247.367 96.5545 246.888 97.6374 246.888 98.8037V148.017H296.182C297.351 148.017 298.435 148.496 299.228 149.329C299.958 150.12 300.376 151.182 300.376 152.265C300.376 153.348 299.979 154.286 299.228 155.098C296.224 158.326 294.66 162.075 294.66 165.99C294.66 176.632 306.467 185.296 320.965 185.296C335.464 185.296 347.271 176.632 347.271 165.99C347.271 162.095 345.686 158.326 342.682 155.098C341.952 154.306 341.534 153.327 341.534 152.265C341.534 151.203 341.952 150.12 342.682 149.329C343.475 148.496 344.559 148.017 345.728 148.017H395.022V98.8037C395.022 97.6374 395.502 96.5545 396.337 95.7631C397.129 95.0341 398.193 94.6176 399.278 94.6176C400.363 94.6176 401.302 95.0133 402.115 95.7631C405.349 98.7621 409.104 100.324 413.025 100.324C423.686 100.324 432.364 88.5363 432.364 74.0618C432.364 59.5874 423.686 47.7996 413.025 47.7996ZM294.639 111.758L294.91 108.842C295.327 107.509 296.516 105.822 298.519 103.76C300.501 101.719 304.506 98.1789 310.556 93.1597L319.401 85.808C320.84 84.6001 322.113 83.3713 323.177 82.1217C324.241 80.8721 325.138 79.4975 325.868 78.0397C326.598 76.5818 327.14 74.999 327.474 73.3329C327.829 71.6668 327.996 69.8549 327.996 67.8972C327.996 65.7937 327.474 63.9818 326.41 62.4407C325.346 60.8995 324.011 60.1289 322.405 60.1289C320.486 60.1289 318.65 60.7329 316.918 61.92C315.187 63.1071 314.206 64.315 313.956 65.4813C313.81 66.2102 313.81 67.0016 313.956 67.8347C314.06 68.7719 314.06 69.4384 313.998 69.8341C313.789 70.7504 313.372 71.5835 312.725 72.2916C312.079 73.0205 311.348 73.562 310.514 73.9577C309.68 74.3326 308.824 74.52 308.011 74.52C307.197 74.52 306.404 74.3117 305.779 73.916C305.153 73.5203 304.673 72.9997 304.381 72.3749C304.068 71.7501 303.943 71.1045 303.943 70.4172C303.943 69.3551 304.214 68.2513 304.715 67.1683C305.236 66.0645 305.945 65.0023 306.842 64.0026C307.76 63.003 308.803 62.045 310.013 61.1702C311.223 60.2747 312.538 59.5041 313.956 58.8168C317.398 57.1924 321.111 56.3801 325.159 56.3801C329.206 56.3801 332.356 57.3382 335.005 59.275C337.654 61.2119 339.01 63.9818 339.01 67.5431C339.01 69.0843 338.885 70.5005 338.593 71.8126C338.301 73.1246 337.759 74.4367 336.903 75.7696C336.069 77.1233 335.255 78.2896 334.483 79.2893C333.712 80.289 332.481 81.5802 330.728 83.1214C328.997 84.6833 327.474 85.9746 326.202 87.0159C324.908 88.0573 322.968 89.6192 320.423 91.6602L314.332 96.492C311.495 98.7412 309.596 101.428 308.637 104.552H319.735C321.696 104.552 323.448 103.885 325.054 102.552C326.014 101.74 326.994 100.595 327.954 99.1369C327.808 99.2411 332.084 101.136 332.022 101.095C330.436 105.572 328.976 109.134 327.662 111.737H294.66H294.701L294.639 111.758ZM371.22 80.5389C370.427 80.6014 369.342 80.6638 367.986 80.7888C366.63 80.8929 365.754 80.9554 365.295 80.9971C364.857 81.0387 364.252 81.0595 363.501 81.1012C362.75 81.1428 361.999 81.1428 361.269 81.1428C356.033 81.1428 351.944 80.9762 348.982 80.643C348.398 82.1633 346.979 86.162 344.81 92.6599C345.915 92.3891 347.584 92.1392 349.816 91.8685C352.069 91.5977 353.843 91.4728 355.157 91.4728C359.35 91.4728 362.604 92.5766 364.941 94.7634C367.256 96.9502 368.424 99.8659 368.424 103.469C368.424 110.487 365.441 116.673 359.517 122.088C355.073 126.107 350.171 128.107 344.789 128.107C339.407 128.107 335.422 127.274 332.773 125.587C331.125 124.524 330.29 123.171 330.29 121.505C330.29 120.193 330.812 119.047 331.834 118.027C332.856 117.006 334.129 116.485 335.631 116.485C338.468 116.485 340.366 117.652 341.326 120.026C342.39 122.754 343.662 124.108 345.143 124.108C347.584 124.108 349.795 122.817 351.715 120.234C352.987 118.526 354.135 116.048 355.178 112.82C356.221 109.592 356.742 106.551 356.742 103.656C356.742 102.073 356.471 100.699 355.95 99.5951C355.428 98.4913 354.74 97.6999 353.905 97.2209C353.071 96.7419 352.132 96.5128 351.11 96.5128C349.065 96.5128 347.313 96.7002 345.874 97.0751C344.434 97.45 337.967 98.8454 337.967 98.8454L347.146 71.8126C348.147 71.9167 349.879 72.0833 352.341 72.3332C354.781 72.5832 356.701 72.7081 358.077 72.7081C359.287 72.7081 360.518 72.6664 361.749 72.604C363.001 72.5207 364.023 72.4582 364.857 72.3749C365.692 72.2916 366.964 72.1666 368.675 71.9792C370.385 71.7918 371.783 71.6459 372.847 71.5626L374.537 72.7081L371.262 80.518L371.22 80.5389Z" fill="#0E65C0"></path>
+                    </svg>
+                </div>
+                <div class="frb-wmf-identity-message">
+                    <p>25 years of the internet at its best</p>
+                </div>
+            </div>
+
+            <div class="frb-decoration frb-decoration-bottom-left">
+                <svg width="235" height="177" viewBox="0 0 235 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M109.676 39.8403C111.228 39.8403 112.722 39.2119 113.998 38.0226C114.314 37.7271 114.703 37.571 115.122 37.571C115.548 37.571 115.972 37.739 116.285 38.0323C116.618 38.3446 116.801 38.7748 116.801 39.2437V58.7981H136.393C137.068 58.7981 137.654 59.1828 137.922 59.8014C138.191 60.4212 138.071 61.1128 137.61 61.6072C136.419 62.8845 135.789 64.3827 135.789 65.9399C135.789 70.1683 140.468 73.6086 146.22 73.6086C151.971 73.6086 156.651 70.1683 156.651 65.9399C156.651 64.3827 156.021 62.885 154.829 61.6072C154.368 61.1133 154.248 60.4212 154.517 59.8014C154.785 59.1828 155.372 58.7981 156.046 58.7981H175.546V39.2097C175.546 38.014 174.539 37.2743 173.606 37.2743C173.129 37.2743 172.685 37.4499 172.324 37.7828C171.105 38.9039 169.685 39.4961 168.215 39.4961C164.134 39.4961 160.813 34.9288 160.813 29.315C160.813 23.7012 164.134 19.134 168.215 19.134C169.685 19.134 171.106 19.7267 172.324 20.8473C172.685 21.1801 173.129 21.3557 173.606 21.3557C174.539 21.3557 175.546 20.6155 175.546 19.4203V0H156.051C155.273 0 154.597 0.443564 154.283 1.15785C153.972 1.86728 154.104 2.661 154.628 3.22886C155.752 4.44888 156.346 5.87311 156.346 7.34708C156.346 11.4324 151.782 14.7564 146.174 14.7564C140.566 14.7564 136.002 11.4324 136.002 7.34708C136.002 5.87311 136.596 4.44888 137.72 3.22886C138.243 2.66046 138.375 1.86674 138.065 1.15785C137.752 0.443564 137.075 0 136.297 0H116.801V19.5548C116.801 20.602 115.948 21.2277 115.123 21.2277C114.704 21.2277 114.314 21.0715 113.998 20.7759C112.724 19.5867 111.229 18.9584 109.676 18.9584C105.452 18.9584 102.015 23.6418 102.015 29.3988C102.015 35.1558 105.452 39.8392 109.676 39.8392L109.676 39.8403Z" fill="#F0BC00"></path>
+                    <path d="M124.266 77.4505C122.714 77.4505 121.219 78.0789 119.944 79.2681C119.627 79.5636 119.239 79.7198 118.82 79.7198C118.393 79.7198 117.97 79.5517 117.657 79.2583C117.324 78.946 117.141 78.516 117.141 78.047V58.4926H97.5487C96.874 58.4926 96.2882 58.108 96.02 57.4893C95.7511 56.8696 95.8704 56.178 96.3314 55.6836C97.5234 54.4063 98.1533 52.908 98.1533 51.3508C98.1533 47.1223 93.4736 43.6822 87.7223 43.6822C81.9711 43.6822 77.2913 47.1223 77.2913 51.3508C77.2913 52.908 77.9213 54.4057 79.1132 55.6836C79.5743 56.1774 79.6936 56.8696 79.4247 57.4893C79.1564 58.108 78.5702 58.4926 77.8954 58.4926H58.3954V78.081C58.3954 79.2767 59.4027 80.0164 60.3355 80.0164C60.8133 80.0164 61.2564 79.8408 61.6181 79.508C62.8365 78.3868 64.2568 77.7946 65.7267 77.7946C69.8083 77.7946 73.1293 82.3619 73.1293 87.9757C73.1293 93.5895 69.8083 98.1568 65.7267 98.1568C64.2568 98.1568 62.836 97.564 61.6181 96.4434C61.2564 96.1106 60.8133 95.935 60.3355 95.935C59.4027 95.935 58.3954 96.6752 58.3954 97.8704V117.291H77.8905C78.6684 117.291 79.3454 116.847 79.659 116.133C79.9694 115.423 79.8377 114.63 79.3141 114.062C78.1902 112.842 77.5963 111.418 77.5963 109.944C77.5963 105.858 82.1595 102.534 87.7677 102.534C93.3759 102.534 97.9396 105.858 97.9396 109.944C97.9396 111.418 97.3458 112.842 96.2218 114.062C95.6988 114.63 95.5665 115.424 95.8769 116.133C96.19 116.847 96.8669 117.291 97.6448 117.291H117.141V97.7358C117.141 96.6887 117.994 96.0631 118.819 96.0631C119.238 96.0631 119.627 96.2192 119.944 96.5147C121.218 97.704 122.713 98.3323 124.266 98.3323C128.49 98.3323 131.927 93.6489 131.927 87.8919C131.927 82.1349 128.49 77.4515 124.266 77.4515L124.266 77.4505Z" fill="#F0BC00"></path>
+                    <path d="M51.2761 157.132C52.8319 157.132 54.3283 156.502 55.6049 155.309C56.0983 154.847 56.7899 154.728 57.409 154.997C58.0271 155.265 58.4115 155.852 58.4115 156.527V176.045H77.9822C79.1768 176.045 79.9159 175.037 79.9159 174.103C79.9159 173.625 79.7404 173.181 79.4079 172.819C78.2878 171.6 77.6961 170.178 77.6961 168.707C77.6961 164.622 82.2592 161.298 87.868 161.298C93.4768 161.298 98.0399 164.621 98.0399 168.707C98.0399 170.178 97.4477 171.6 96.3281 172.819C95.9956 173.181 95.8201 173.625 95.8201 174.103C95.8201 175.037 96.5597 176.045 97.7538 176.045H117.157V156.532C117.157 155.754 116.713 155.076 116 154.763C115.291 154.452 114.498 154.584 113.931 155.107C112.712 156.232 111.289 156.827 109.816 156.827C105.735 156.827 102.414 152.26 102.414 146.646C102.414 141.033 105.735 136.465 109.816 136.465C111.289 136.465 112.712 137.06 113.931 138.184C114.499 138.708 115.292 138.84 116 138.53C116.713 138.216 117.157 137.539 117.157 136.76V117.247H97.6194C96.5732 117.247 95.9481 116.393 95.9481 115.567C95.9481 115.147 96.1041 114.758 96.3994 114.442C97.5875 113.165 98.2153 111.67 98.2153 110.116C98.2153 105.887 93.5361 102.447 87.7843 102.447C82.0325 102.447 77.3533 105.887 77.3533 110.116C77.3533 111.67 77.9811 113.165 79.1693 114.442C79.4646 114.759 79.6206 115.148 79.6206 115.567C79.6206 115.994 79.4527 116.418 79.1596 116.731C78.8476 117.064 78.4179 117.247 77.9493 117.247H58.4126V136.857C58.4126 137.533 58.0282 138.119 57.4101 138.388C56.7909 138.657 56.1 138.538 55.606 138.076C54.3299 136.883 52.833 136.253 51.2772 136.253C47.0525 136.253 43.6155 140.936 43.6155 146.693C43.6155 152.45 47.0525 157.134 51.2772 157.134L51.2761 157.132Z" fill="#F0BC00"></path>
+                    <path d="M168.291 157.132C169.846 157.132 171.343 156.502 172.62 155.309C173.113 154.847 173.804 154.728 174.424 154.997C175.042 155.265 175.426 155.852 175.426 156.527V176.045H194.997C196.191 176.045 196.93 175.037 196.93 174.103C196.93 173.625 196.755 173.181 196.422 172.819C195.302 171.6 194.711 170.178 194.711 168.707C194.711 164.622 199.274 161.298 204.883 161.298C210.491 161.298 215.054 164.621 215.054 168.707C215.054 170.178 214.462 171.6 213.343 172.819C213.01 173.181 212.835 173.625 212.835 174.103C212.835 175.037 213.574 176.045 214.768 176.045H234.171V156.532C234.171 155.754 233.728 155.076 233.014 154.763C232.306 154.452 231.513 154.584 230.945 155.107C229.726 156.232 228.303 156.827 226.831 156.827C222.749 156.827 219.428 152.26 219.428 146.646C219.428 141.033 222.749 136.465 226.831 136.465C228.303 136.465 229.726 137.06 230.945 138.184C231.513 138.708 232.306 138.84 233.014 138.53C233.728 138.216 234.171 137.539 234.171 136.76V117.247H214.634C213.588 117.247 212.963 116.393 212.963 115.567C212.963 115.147 213.119 114.758 213.414 114.442C214.602 113.165 215.23 111.67 215.23 110.116C215.23 105.887 210.551 102.447 204.799 102.447C199.047 102.447 194.368 105.887 194.368 110.116C194.368 111.67 194.996 113.165 196.184 114.442C196.479 114.759 196.635 115.148 196.635 115.567C196.635 115.994 196.467 116.418 196.174 116.731C195.862 117.064 195.432 117.247 194.964 117.247H175.427V136.857C175.427 137.533 175.043 138.119 174.425 138.388C173.806 138.657 173.115 138.538 172.621 138.076C171.344 136.883 169.848 136.253 168.292 136.253C164.067 136.253 160.63 140.936 160.63 146.693C160.63 152.45 164.067 157.134 168.292 157.134L168.291 157.132Z" fill="#F0BC00"></path>
+                    <path d="M19.2822 117.228C20.0601 117.228 20.7377 117.671 21.0508 118.385C21.3612 119.094 21.2282 119.888 20.7051 120.456C19.5813 121.676 18.9873 123.1 18.9873 124.574C18.9873 128.66 23.5519 131.983 29.1602 131.983C34.7682 131.983 39.3311 128.659 39.3311 124.574C39.331 123.1 38.7372 121.676 37.6133 120.456C37.0897 119.888 36.9582 119.094 37.2686 118.385C37.5822 117.671 38.2593 117.228 39.0371 117.228H58.5322V136.647C58.5322 137.843 57.5246 138.583 56.5918 138.583C56.1141 138.583 55.6712 138.407 55.3096 138.074C54.0917 136.954 52.6701 136.361 51.2002 136.361C47.1188 136.362 43.7979 140.928 43.7979 146.542C43.7979 152.156 47.1188 156.723 51.2002 156.724C52.6701 156.724 54.0912 156.131 55.3096 155.01C55.6712 154.677 56.1142 154.501 56.5918 154.501C57.5245 154.501 58.5321 155.241 58.5322 156.437V176H0V117.228H19.2822Z" fill="#F0BC00"></path>
+                    <path d="M136.297 117.228C137.075 117.228 137.752 117.67 138.065 118.385C138.376 119.094 138.243 119.888 137.72 120.456C136.596 121.676 136.002 123.1 136.002 124.574C136.002 128.659 140.566 131.983 146.174 131.983C151.782 131.983 156.346 128.66 156.346 124.574C156.346 123.1 155.752 121.676 154.628 120.456C154.104 119.888 153.973 119.094 154.283 118.385C154.597 117.671 155.274 117.228 156.052 117.228H175.547V136.647C175.547 137.843 174.539 138.583 173.606 138.583C173.129 138.583 172.686 138.407 172.324 138.074C171.106 136.954 169.685 136.361 168.215 136.361C164.133 136.362 160.813 140.928 160.812 146.542C160.812 152.156 164.133 156.723 168.215 156.724C169.685 156.724 171.106 156.131 172.324 155.01C172.686 154.677 173.129 154.501 173.606 154.501C174.539 154.501 175.547 155.241 175.547 156.437V176H116.801V156.471C116.801 156.002 116.618 155.572 116.285 155.26C115.973 154.966 115.548 154.798 115.122 154.798C114.703 154.798 114.314 154.954 113.997 155.25C112.722 156.439 111.228 157.067 109.676 157.067V157.066C105.451 157.066 102.015 152.383 102.015 146.626C102.015 140.869 105.451 136.186 109.676 136.186C111.228 136.186 112.724 136.814 113.998 138.003C114.314 138.298 114.703 138.455 115.122 138.455C115.947 138.455 116.802 137.829 116.802 136.782V117.228H136.297Z" fill="#F0BC00"></path>
+                </svg>
+            </div>
+            <div class="frb-decoration frb-decoration-top-right">
+                <svg width="191" height="235" viewBox="0 0 191 235" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.66062 98.6543C9.21638 98.6543 10.7128 98.0237 11.9894 96.8307C12.4828 96.3693 13.1743 96.2499 13.7935 96.519C14.4116 96.7875 14.796 97.3743 14.796 98.0497V117.567H34.3668C35.5614 117.567 36.3004 116.559 36.3004 115.625C36.3004 115.147 36.125 114.703 35.7924 114.342C34.6723 113.122 34.0806 111.701 34.0806 110.229C34.0806 106.144 38.6438 102.82 44.2525 102.82C49.8613 102.82 54.4244 106.144 54.4244 110.229C54.4244 111.701 53.8322 113.123 52.7126 114.342C52.3801 114.703 52.2046 115.147 52.2046 115.625C52.2046 116.56 52.9442 117.567 54.1383 117.567H73.5411V98.0545C73.5411 97.2759 73.0979 96.5978 72.3843 96.285C71.6755 95.9743 70.8825 96.1062 70.3151 96.6297C69.0962 97.7546 67.6733 98.349 66.2006 98.349C62.119 98.349 58.798 93.7818 58.798 88.1685C58.798 82.5552 62.119 77.9874 66.2006 77.9874C67.6733 77.9874 69.0962 78.5823 70.3151 79.7067C70.883 80.2302 71.676 80.3626 72.3843 80.0519C73.0979 79.7386 73.5411 79.061 73.5411 78.2824V58.7697H54.0039C52.9577 58.7697 52.3326 57.9155 52.3326 57.0893C52.3326 56.6695 52.4886 56.2805 52.7839 55.9639C53.972 54.6877 54.5998 53.1921 54.5998 51.6382C54.5998 47.4097 49.9207 43.9695 44.1688 43.9695C38.417 43.9695 33.7378 47.4097 33.7378 51.6382C33.7378 53.1921 34.3657 54.6877 35.5538 55.9639C35.8491 56.281 36.0051 56.6701 36.0051 57.0893C36.0051 57.5162 35.8372 57.9403 35.5441 58.2532C35.232 58.586 34.8024 58.7697 34.3338 58.7697H14.7971V78.3797C14.7971 79.0551 14.4127 79.6413 13.7946 79.9104C13.1754 80.1795 12.4845 80.06 11.9905 79.5986C10.7144 78.4056 9.21747 77.7751 7.6617 77.7751C3.43705 77.7751 0 82.4585 0 88.2155C0 93.9725 3.43705 98.6559 7.6617 98.6559L7.66062 98.6543Z" fill="#F0BC00"></path>
+                    <path d="M139.051 18.913C137.496 18.913 135.999 19.5435 134.723 20.7365C134.229 21.198 133.538 21.3174 132.919 21.0483C132.3 20.7798 131.916 20.193 131.916 19.5176V0H112.345C111.151 0 110.412 1.00821 110.412 1.94187C110.412 2.42004 110.587 2.86418 110.92 3.22565C112.04 4.44513 112.631 5.86668 112.631 7.33794C112.631 11.4232 108.068 14.7472 102.46 14.7472C96.8508 14.7472 92.2877 11.4238 92.2877 7.33794C92.2877 5.86668 92.8799 4.44459 93.9995 3.22565C94.332 2.86418 94.5075 2.42004 94.5075 1.94187C94.5075 1.00767 93.7679 0 92.5738 0H73.171V19.5127C73.171 20.2913 73.6141 20.9694 74.3278 21.2823C75.0366 21.5929 75.8296 21.4611 76.3969 20.9375C77.6158 19.8126 79.0388 19.2183 80.5115 19.2183C84.5931 19.2183 87.9141 23.7855 87.9141 29.3988C87.9141 35.0121 84.5931 39.5798 80.5115 39.5798C79.0388 39.5798 77.6158 38.985 76.3969 37.8606C75.829 37.337 75.036 37.2046 74.3278 37.5153C73.6141 37.8287 73.171 38.5062 73.171 39.2848V58.7976H92.7082C93.7544 58.7976 94.3795 59.6518 94.3795 60.4779C94.3795 60.8977 94.2235 61.2868 93.9282 61.6034C92.7401 62.8796 92.1123 64.3752 92.1123 65.9291C92.1123 70.1576 96.7915 73.5977 102.543 73.5977C108.295 73.5977 112.974 70.1576 112.974 65.9291C112.974 64.3752 112.346 62.8796 111.158 61.6034C110.863 61.2862 110.707 60.8972 110.707 60.4779C110.707 60.0511 110.875 59.6269 111.168 59.3141C111.48 58.9813 111.91 58.7976 112.378 58.7976H131.915V39.1876C131.915 38.5122 132.299 37.9259 132.917 37.6569C133.537 37.3878 134.228 37.5072 134.722 37.9686C135.998 39.1616 137.495 39.7922 139.05 39.7922C143.275 39.7922 146.712 35.1088 146.712 29.3518C146.712 23.5948 143.275 18.9114 139.05 18.9114L139.051 18.913Z" fill="#F0BC00"></path>
+                    <path d="M124.675 98.6543C126.231 98.6543 127.727 98.0237 129.004 96.8307C129.497 96.3693 130.189 96.2499 130.808 96.519C131.426 96.7875 131.81 97.3743 131.81 98.0497V117.567H151.381C152.576 117.567 153.315 116.559 153.315 115.625C153.315 115.147 153.139 114.703 152.807 114.342C151.687 113.122 151.095 111.701 151.095 110.229C151.095 106.144 155.658 102.82 161.267 102.82C166.876 102.82 171.439 106.144 171.439 110.229C171.439 111.701 170.847 113.123 169.727 114.342C169.395 114.703 169.219 115.147 169.219 115.625C169.219 116.56 169.959 117.567 171.153 117.567H190.556V98.0545C190.556 97.2759 190.112 96.5978 189.399 96.285C188.69 95.9743 187.897 96.1062 187.33 96.6297C186.111 97.7546 184.688 98.349 183.215 98.349C179.134 98.349 175.813 93.7818 175.813 88.1685C175.813 82.5552 179.134 77.9874 183.215 77.9874C184.688 77.9874 186.111 78.5823 187.33 79.7067C187.898 80.2302 188.691 80.3626 189.399 80.0519C190.112 79.7386 190.556 79.061 190.556 78.2824V58.7697H171.018C169.972 58.7697 169.347 57.9155 169.347 57.0893C169.347 56.6695 169.503 56.2805 169.798 55.9639C170.987 54.6877 171.614 53.1921 171.614 51.6382C171.614 47.4097 166.935 43.9695 161.183 43.9695C155.432 43.9695 150.752 47.4097 150.752 51.6382C150.752 53.1921 151.38 54.6877 152.568 55.9639C152.864 56.281 153.02 56.6701 153.02 57.0893C153.02 57.5162 152.852 57.9403 152.559 58.2532C152.247 58.586 151.817 58.7697 151.348 58.7697H131.812V78.3797C131.812 79.0551 131.427 79.6413 130.809 79.9104C130.19 80.1795 129.499 80.06 129.005 79.5986C127.729 78.4056 126.232 77.7751 124.676 77.7751C120.452 77.7751 117.015 82.4585 117.015 88.2155C117.015 93.9725 120.452 98.6559 124.676 98.6559L124.675 98.6543Z" fill="#F0BC00"></path>
+                    <path d="M139.051 136.14C137.496 136.14 135.999 136.771 134.723 137.964C134.229 138.425 133.538 138.544 132.919 138.275C132.3 138.007 131.916 137.42 131.916 136.745V117.227H112.345C111.151 117.227 110.412 118.235 110.412 119.169C110.412 119.647 110.587 120.091 110.92 120.453C112.04 121.672 112.631 123.094 112.631 124.565C112.631 128.65 108.068 131.974 102.46 131.974C96.8508 131.974 92.2877 128.651 92.2877 124.565C92.2877 123.094 92.8799 121.672 93.9995 120.453C94.332 120.091 94.5075 119.647 94.5075 119.169C94.5075 118.235 93.7679 117.227 92.5738 117.227H73.171V136.74C73.171 137.518 73.6141 138.197 74.3278 138.509C75.0366 138.82 75.8296 138.688 76.3969 138.165C77.6158 137.04 79.0388 136.445 80.5115 136.445C84.5931 136.445 87.9141 141.013 87.9141 146.626C87.9141 152.239 84.5931 156.807 80.5115 156.807C79.0388 156.807 77.6158 156.212 76.3969 155.088C75.829 154.564 75.036 154.432 74.3278 154.742C73.6141 155.056 73.171 155.733 73.171 156.512V176.025H92.7082C93.7544 176.025 94.3795 176.879 94.3795 177.705C94.3795 178.125 94.2235 178.514 93.9282 178.831C92.7401 180.107 92.1123 181.602 92.1123 183.156C92.1123 187.385 96.7915 190.825 102.543 190.825C108.295 190.825 112.974 187.385 112.974 183.156C112.974 181.602 112.346 180.107 111.158 178.831C110.863 178.513 110.707 178.124 110.707 177.705C110.707 177.278 110.875 176.854 111.168 176.541C111.48 176.208 111.91 176.025 112.378 176.025H131.915V156.415C131.915 155.739 132.299 155.153 132.917 154.884C133.537 154.615 134.228 154.734 134.722 155.196C135.998 156.389 137.495 157.019 139.05 157.019C143.275 157.019 146.712 152.336 146.712 146.579C146.712 140.822 143.275 136.138 139.05 136.138L139.051 136.14Z" fill="#F0BC00"></path>
+                    <path d="M124.675 215.881C126.231 215.881 127.727 215.251 129.004 214.058C129.497 213.596 130.189 213.477 130.808 213.746C131.426 214.015 131.81 214.601 131.81 215.277V234.794H151.381C152.576 234.794 153.315 233.786 153.315 232.852C153.315 232.374 153.139 231.93 152.807 231.569C151.687 230.349 151.095 228.928 151.095 227.456C151.095 223.371 155.658 220.047 161.267 220.047C166.876 220.047 171.439 223.371 171.439 227.456C171.439 228.928 170.847 230.35 169.727 231.569C169.395 231.93 169.219 232.374 169.219 232.852C169.219 233.787 169.959 234.794 171.153 234.794H190.556V215.282C190.556 214.503 190.112 213.825 189.399 213.512C188.69 213.201 187.897 213.333 187.33 213.857C186.111 214.982 184.688 215.576 183.215 215.576C179.134 215.576 175.813 211.009 175.813 205.396C175.813 199.782 179.134 195.215 183.215 195.215C184.688 195.215 186.111 195.809 187.33 196.934C187.898 197.457 188.691 197.59 189.399 197.279C190.112 196.966 190.556 196.288 190.556 195.51V175.997H171.018C169.972 175.997 169.347 175.143 169.347 174.316C169.347 173.897 169.503 173.508 169.798 173.191C170.987 171.915 171.614 170.419 171.614 168.865C171.614 164.637 166.935 161.197 161.183 161.197C155.432 161.197 150.752 164.637 150.752 168.865C150.752 170.419 151.38 171.915 152.568 173.191C152.864 173.508 153.02 173.897 153.02 174.316C153.02 174.743 152.852 175.167 152.559 175.48C152.247 175.813 151.817 175.997 151.348 175.997H131.812V195.607C131.812 196.282 131.427 196.868 130.809 197.137C130.19 197.407 129.499 197.287 129.005 196.826C127.729 195.633 126.232 195.002 124.676 195.002C120.452 195.002 117.015 199.686 117.015 205.443C117.015 211.2 120.452 215.883 124.676 215.883L124.675 215.881Z" fill="#F0BC00"></path>
+                    <path d="M73.5254 19.5736C73.5255 20.0424 73.709 20.4723 74.042 20.7845C74.3545 21.0777 74.7778 21.2454 75.2041 21.2455C75.623 21.2455 76.0122 21.0899 76.3291 20.7943C77.6041 19.6052 79.098 18.977 80.6504 18.9769V18.9779C84.8749 18.9782 88.3115 23.6615 88.3115 29.4183C88.3114 35.1751 84.8748 39.8585 80.6504 39.8588C79.0979 39.8588 77.6026 39.2305 76.3281 38.0414C76.0119 37.7459 75.6229 37.5893 75.2041 37.5892C74.3787 37.5892 73.5254 38.215 73.5254 39.2621V58.8168H54.0293C53.2514 58.8168 52.5748 58.3729 52.2617 57.6586C51.9515 56.9498 52.0834 56.1566 52.6064 55.5883C53.7303 54.3683 54.3241 52.944 54.3242 51.4701C54.3242 47.3849 49.7604 44.061 44.1523 44.0609C38.5441 44.0609 33.9805 47.3848 33.9805 51.4701C33.9805 52.944 34.5744 54.3683 35.6982 55.5883C36.2218 56.1561 36.3532 56.9492 36.043 57.6586C35.7294 58.3727 35.0531 58.8166 34.2754 58.8168H14.7803V39.3969C14.7803 38.2018 15.787 37.4614 16.7197 37.4613C17.1975 37.4613 17.6412 37.6373 18.0029 37.9701C19.2207 39.0904 20.6416 39.683 22.1113 39.683C26.1927 39.6828 29.5135 35.1158 29.5137 29.5023C29.5137 23.8886 26.1928 19.3208 22.1113 19.3207C20.6414 19.3207 19.2213 19.9134 18.0029 21.0345C17.6412 21.3674 17.1975 21.5424 16.7197 21.5424C15.787 21.5423 14.7803 20.8024 14.7803 19.6068V0.208374H73.5254V19.5736Z" fill="#F0BC00"></path>
+                    <path d="M190.54 39.2621L190.539 58.8168H171.044C170.266 58.8168 169.589 58.3729 169.276 57.6586C168.966 56.9497 169.098 56.1566 169.621 55.5883C170.745 54.3683 171.339 52.944 171.339 51.4701C171.339 47.3849 166.775 44.061 161.167 44.0609C155.559 44.0609 150.995 47.3848 150.995 51.4701C150.995 52.944 151.589 54.3683 152.713 55.5883C153.236 56.1561 153.368 56.9492 153.058 57.6586C152.744 58.3729 152.067 58.8168 151.289 58.8168H131.794V39.3969C131.794 38.2017 132.802 37.4614 133.734 37.4613C134.212 37.4613 134.656 37.6373 135.018 37.9701C136.235 39.0904 137.656 39.683 139.126 39.683C143.207 39.6828 146.528 35.1158 146.528 29.5023C146.528 23.8886 143.207 19.3209 139.126 19.3207C137.656 19.3207 136.236 19.9134 135.018 21.0345C134.656 21.3674 134.212 21.5424 133.734 21.5424C132.802 21.5423 131.794 20.8025 131.794 19.6068V0.208374H190.54V39.2621Z" fill="#F0BC00"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="frb-form-wrapper">
+
+            <form id="frb-form" data-frequency="onetime">
+
+                <div class="frb-step frb-step-1">
+
+                    <button class="frb-icon-btn frb-close skin-invert" aria-label="Close"></button>
+
+                    <fieldset class="frb-frequency">
+                        <legend class="frb-numbered error-highlight">
+                            How often would you like to donate?
+                        </legend>
+                        <ul>
+                            <li>
+                                <input class="frb-radio" type="radio" name="frequency" id="frb-frequency-onetime" value="onetime" checked="">
+                                <label class="frb-radio-label" for="frb-frequency-onetime">Once</label>
+                            </li>
+                            <li>
+                                <input class="frb-radio" type="radio" name="frequency" id="frb-frequency-monthly" value="monthly">
+                                <label class="frb-radio-label" for="frb-frequency-monthly">Monthly</label>
+                            </li>
+                            <li>
+                                <input class="frb-radio" type="radio" name="frequency" id="frb-frequency-annual" value="annual">
+                                <label class="frb-radio-label" for="frb-frequency-annual">Annual</label>
+                            </li>
+                        </ul>
+                        <div class="frb-recurring-pitch">
+                            <svg class="frb-recurring-bar" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.7 9.5" preserveAspectRatio="none">
+                                <path fill="currentColor" d="M202.3.4C176.2.3 150 .3 123.9.2S71.6.1 45.4.1C30.8.1 16.1 0 1.4 0c-1.9 0-1.9 3 0 3 26.1.1 52.3.1 78.4.2h14.8V3.5c.1.7.1 1.4 0 2.1-.1.7-.3 1.4-.6 2-.1.3 0 .9.2 1.2.2.3.5.6.9.7.4.1.8.1 1.2-.2.4-.2.5-.5.7-.9.7-1.6.9-3.4.6-5.2 20.2 0 40.4.1 60.6.1 14.7 0 29.3.1 44 .1 2 0 2-3 .1-3z"></path>
+                            </svg>
+                            Support Wikipedia year-round
+                        </div>
+                        <div class="frb-recurring-pitch-thanks">
+                            <svg class="frb-recurring-pitch-thanks-heart" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31">
+                                <circle fill="#e8e9eb" cx="15.5" cy="15.5" r="15"></circle>
+                                <path fill="#ff3079" d="M26.71 16.039h-1.756a.618.618 0 0 1 0-1.237h1.756a.618.618 0 0 1 0 1.237zm-3.332 7.92a.618.618 0 0 1-.433-.18l-1.237-1.236a.618.618 0 1 1 .878-.872l1.237 1.237a.618.618 0 0 1-.439 1.057l-.006-.006zM22.333 9.41a.618.618 0 0 1-.445-.191.618.618 0 0 1 0-.872l1.236-1.237a.645.645 0 0 1 .897.928l-1.237 1.236a.618.618 0 0 1-.451.136zM5.96 16.113H4.204a.618.618 0 0 1 0-1.237H5.96a.618.618 0 0 1 0 1.237zm2.82-6.684a.618.618 0 0 1-.44-.18L7.105 8.014a.618.618 0 1 1 .872-.878l1.237 1.237c.24.24.24.63 0 .872a.618.618 0 0 1-.433.185zm-1.46 14.53a.618.618 0 0 1-.426-1.082l1.237-1.237a.619.619 0 0 1 .859.89l-1.237 1.237a.618.618 0 0 1-.432.192z"></path>
+                                <path fill="#336bf2" d="M18.462 10.765c-1.923.222-2.776 2.077-2.961 2.553a.043.043 0 1 1-.087 0c-.185-.476-1.039-2.33-2.962-2.553-1.28-.155-3.66.513-3.66 3.95 0 4.329 6.251 7.797 6.647 8.038a.037.037 0 0 0 .037 0c.396-.216 6.647-3.666 6.647-8.038 0-3.437-2.38-4.105-3.66-3.95Z"></path>
+                            </svg>
+                            Thanks for your generous support
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="frb-amounts">
+                        <legend class="frb-numbered">
+                            <span class="error-highlight">Please select an amount (<span class="frb-replace-currencycode">GBP</span>)</span><br>
+                            <span class="avg-donation-once">The average donation in <span class="frb-replace-countryname">the UK</span> is around&nbsp;<span class="frb-replaced">£6</span>.</span>
+                        </legend>
+                        <ul>
+                            <li>
+                                <input class="frb-radio" name="amount" type="radio" id="frb-amt-ps1" value="2.75">
+                                <label for="frb-amt-ps1" class="frb-radio-label">£2.75</label>
+                            </li>
+                            <li>
+                                <input class="frb-radio" name="amount" type="radio" id="frb-amt-ps2" value="15">
+                                <label for="frb-amt-ps2" class="frb-radio-label">£15</label>
+                            </li>
+                            <li class="frb-highlight">
+                                <input class="frb-radio" name="amount" type="radio" id="frb-amt-ps3" value="25">
+                                <label for="frb-amt-ps3" class="frb-radio-label">£25</label>
+                                <div class="frb-amount-highlight">Preferred Amount</div>
+                            </li>
+                            <li>
+                                <input class="frb-radio" name="amount" type="radio" id="frb-amt-ps4" value="50">
+                                <label for="frb-amt-ps4" class="frb-radio-label">£50</label>
+                            </li>
+                            <li>
+                                <input class="frb-radio" name="amount" type="radio" id="frb-amt-ps5" value="100">
+                                <label for="frb-amt-ps5" class="frb-radio-label">£100</label>
+                            </li>
+                            <li>
+                                <input class="frb-radio" name="amount" type="radio" id="frb-amt-ps6" value="250">
+                                <label for="frb-amt-ps6" class="frb-radio-label">£250</label>
+                            </li>
+                            <li>
+                                <input class="frb-radio" name="amount" type="radio" id="frb-amt-ps7" value="500">
+                                <label for="frb-amt-ps7" class="frb-radio-label">£500</label>
+                            </li>
+                            <li class="frb-amt-other">
+                                <label for="input_amount_other" class="sr-only">Other amount</label>
+                                <input class="frb-radio" name="amount" type="radio" id="input_amount_other" value="Other">
+                                <input name="otherAmount" type="text" inputmode="decimal" id="frb-amt-other-input" size="3" autocomplete="off" value="" placeholder="Other" tabindex="-1" maxlength="10">
+                                <label for="frb-amt-other-input" class="frb-amt-other-label sr-only">Other</label>
+                            </li>
+                        </ul>
+                        <div class="frb-ptf frb-checkbox-wrapper" style="display: none;">
+                            <input class="frb-checkbox" type="checkbox" name="ptf" id="frb-ptf-checkbox" value="true">
+                            <label class="frb-checkbox-label" for="frb-ptf-checkbox">I'll generously add <span class="frb-ptf-fee frb-replaced">a little</span> to cover the transaction fees so you can keep 100% of my donation.</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="frb-methods">
+                        <legend class="frb-numbered error-highlight">
+                            Please select a payment method
+                        </legend>
+                        <div class="frb-payment-options">
+
+                            
+
+                            <div data-name="Credit Card" class="frb-button frb-pm-cc frb-cctypes-vmaj">
+                                <input id="frb-pm-cc" type="radio" name="frb-methods" class="frb-radio">
+                                <label for="frb-pm-cc" class="frb-label">
+                                    <span class="frb-pm-cc-label">Credit / Debit Card</span>
+                                    <span class="frb-cc-logo-wrapper">
+                                        <svg class="frb-cc-logo-visa white-on-select" xmlns="http://www.w3.org/2000/svg" aria-labelledby="frb-cc-logo-visa-title" width="200" height="120" viewBox="20 20 160 80"><title id="frb-cc-logo-visa-title">Visa</title><path fill="#1434CB" d="M81.37 35.88 61.1 84.24H47.88l-9.97-38.59c-.61-2.38-1.14-3.25-2.98-4.25-3-1.63-7.97-3.16-12.34-4.11l.3-1.4h21.28c2.72 0 5.16 1.8 5.77 4.92l5.27 27.99 13.02-32.92h13.14Zm51.82 32.57c.05-12.76-17.65-13.46-17.53-19.16.04-1.74 1.69-3.58 5.3-4.05a23.6 23.6 0 0 1 12.34 2.16l2.2-10.26A33.61 33.61 0 0 0 123.8 35c-12.37 0-21.07 6.57-21.15 15.99-.08 6.96 6.21 10.84 10.95 13.16 4.88 2.37 6.52 3.89 6.5 6-.04 3.25-3.89 4.68-7.5 4.74-6.28.1-9.93-1.7-12.84-3.05L97.5 82.43c2.92 1.34 8.31 2.51 13.9 2.57 13.15 0 21.75-6.5 21.79-16.55Zm32.65 15.8h11.57l-10.1-48.37h-10.68a5.7 5.7 0 0 0-5.32 3.55l-18.78 44.81h13.14l2.6-7.22h16.06l1.5 7.22ZM151.88 67.1l6.59-18.16 3.78 18.16h-10.37ZM99.25 35.88 88.9 84.24H76.4l10.34-48.36h12.5Z"></path></svg>
+
+                                        <svg class="frb-cc-logo-mastercard" xmlns="http://www.w3.org/2000/svg" aria-labelledby="frb-cc-logo-mastercard-title" width="200" height="120" viewBox="20 20 160 80"><title id="frb-cc-logo-mastercard-title">Mastercard</title><path fill="#FF5F00" d="M118.13 27.38H81.9V92.6h36.23V27.38Z"></path><path fill="#EB001B" d="M84.2 59.99a41.77 41.77 0 0 1 15.76-32.6 41.35 41.35 0 0 0-58.2 7.02A41.51 41.51 0 0 0 48.9 92.6a41.23 41.23 0 0 0 51.17 0A41.53 41.53 0 0 1 84.2 59.99Z"></path><path fill="#F79E1B" d="M167 59.99a41.42 41.42 0 0 1-41.4 41.48 40.93 40.93 0 0 1-25.53-8.87 41.6 41.6 0 0 0 6.9-58.3 43.51 43.51 0 0 0-6.9-6.92 41.2 41.2 0 0 1 58.08 7.03A41.1 41.1 0 0 1 167.01 60Z"></path></svg>
+
+                                        <svg class="frb-cc-logo-amex" aria-labelledby="frb-cc-logo-amex-title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.6 37.5" width="200" height="120"><title id="frb-cc-logo-amex-title">American Express</title><style>.st0 { fill:#0071ce; }</style><rect y="4" width="58.6" height="30" style="fill: #fff;"></rect><path class="st0" d="M 53.7 33.4 L 51.1 30.5 L 48.4 33.4 L 43.1 33.4 L 31.7 33.4 L 31.7 19.9 L 26.4 19.9 L 33 4.8 L 39.4 4.8 L 41.7 10 L 41.7 4.8 L 49.7 4.8 L 51.1 8.7 L 52.5 4.8 L 58.6 4.8 L 58.6 2.5 C 58.6 1.1 57.5 0 56.1 0 L 2.5 0 C 1.1 0 0 1.1 0 2.5 L 0 35 C 0 36.4 1.1 37.5 2.5 37.5 L 56.1 37.5 C 57.5 37.5 58.6 36.4 58.6 35 L 58.6 33.4 L 53.7 33.4 Z"></path><polygon class="st0" points="54.4 31.8 58.6 31.8 53.1 25.9 58.6 20.1 54.5 20.1 51 23.9 47.6 20.1 43.4 20.1 49 26 43.4 31.8 47.5 31.8 51 28 54.4 31.8"></polygon><polygon class="st0" points="36.7 29.1 36.7 27.3 43.3 27.3 43.3 24.6 36.7 24.6 36.7 22.8 43.4 22.8 43.4 20.1 33.5 20.1 33.5 31.8 43.4 31.8 43.4 29.1 36.7 29.1"></polygon><polygon class="st0" points="55.5 18.4 58.5 18.4 58.5 6.6 53.7 6.7 51.1 14 48.4 6.7 43.4 6.7 43.4 18.4 46.6 18.4 46.6 10.2 49.6 18.4 52.4 18.4 55.5 10.2 55.5 18.4"></polygon><path class="st0" d="M 38.3 6.7 L 34.2 6.7 L 29 18.4 L 32.5 18.4 L 33.5 16.1 L 38.9 16.1 L 39.9 18.4 L 43.5 18.4 L 38.3 6.7 Z M 34.6 13.4 L 36.2 9.6 L 37.8 13.4 L 34.6 13.4 Z"></path><polygon class="st0" points="55.7 25.6 58.6 28.8 58.6 22.4 55.7 25.6"></polygon></svg>
+
+                                        <svg class="frb-cc-logo-jcb white-on-select" xmlns="http://www.w3.org/2000/svg" aria-labelledby="frb-cc-logo-jcb-title" width="200" height="120" viewBox="20 20 160 80"><title>JCB</title><path fill="url(#jcb-a)" d="M130.4 69.6h8.7c.2 0 .8-.1 1.1-.1 1.6-.3 3.1-1.8 3.1-3.9 0-2-1.4-3.5-3.1-3.9-.2-.1-.7-.1-1.1-.1h-8.7v8Z"></path><path fill="url(#jcb-b)" d="M142.1 53.7c0-2-1.4-3.3-3.1-3.5-.2 0-.6-.1-.8-.1h-7.8v7.3h7.8c.2 0 .7 0 .8-.1 1.7-.3 3.1-1.7 3.1-3.6Z"></path><path fill="url(#jcb-c)" d="M138.1 15c-8.2 0-15 6.7-15 15v15.6h21.2c.5 0 1.1 0 1.5.1 4.8.2 8.3 2.7 8.3 7 0 3.4-2.4 6.3-6.8 6.8v.2c4.9.3 8.6 3 8.6 7.3 0 4.5-4.1 7.5-9.6 7.5H123V105h22c8.2 0 15-6.7 15-15V15h-21.9Z"></path><path fill="url(#jcb-d)" d="M96.6 15c-8.2 0-15 6.7-15 15v19.6c3.8-3.2 10.4-5.3 21-4.8 5.7.2 11.8 1.8 11.8 1.8V53c-3.1-1.6-6.7-3-11.4-3.3-8.1-.6-12.9 3.4-12.9 10.3 0 7 4.9 11 12.9 10.3 4.7-.3 8.3-1.8 11.4-3.3v6.3s-6 1.6-11.8 1.8c-10.6.5-17.2-1.6-21-4.8V105h22c8.2 0 15-6.7 15-15V15h-22Z"></path><path fill="url(#jcb-e)" d="M55.1 15c-8.2 0-15 6.7-15 15v37c4.2 2.1 8.6 3.4 12.9 3.4 5.2 0 8-3.1 8-7.4V45.5h12.9v17.4c0 6.8-4.2 12.3-18.5 12.3-8.7 0-15.4-1.9-15.4-1.9v31.6h22c8.2 0 15-6.7 15-15V15H55.1Z"></path><defs><linearGradient id="jcb-a" x1="123.04" x2="160.1" y1="65.69" y2="65.69" gradientUnits="userSpaceOnUse"><stop stop-color="#007940"></stop><stop offset=".23" stop-color="#00873F"></stop><stop offset=".74" stop-color="#40A737"></stop><stop offset="1" stop-color="#5CB531"></stop></linearGradient><linearGradient id="jcb-b" x1="123.04" x2="160.1" y1="53.66" y2="53.66" gradientUnits="userSpaceOnUse"><stop stop-color="#007940"></stop><stop offset=".23" stop-color="#00873F"></stop><stop offset=".74" stop-color="#40A737"></stop><stop offset="1" stop-color="#5CB531"></stop></linearGradient><linearGradient id="jcb-c" x1="123.04" x2="160.07" y1="59.96" y2="59.96" gradientUnits="userSpaceOnUse"><stop stop-color="#007940"></stop><stop offset=".23" stop-color="#00873F"></stop><stop offset=".74" stop-color="#40A737"></stop><stop offset="1" stop-color="#5CB531"></stop></linearGradient><linearGradient id="jcb-d" x1="81.36" x2="117.91" y1="60" y2="60" gradientUnits="userSpaceOnUse"><stop stop-color="#6C2C2F"></stop><stop offset=".17" stop-color="#882730"></stop><stop offset=".57" stop-color="#BE1833"></stop><stop offset=".86" stop-color="#DC0436"></stop><stop offset="1" stop-color="#E60039"></stop></linearGradient><linearGradient id="jcb-e" x1="40.07" x2="77.7" y1="59.92" y2="59.92" gradientUnits="userSpaceOnUse"><stop stop-color="#1F286F"></stop><stop offset=".47" stop-color="#004E94"></stop><stop offset=".83" stop-color="#0066B1"></stop><stop offset="1" stop-color="#006FBC"></stop></linearGradient></defs></svg>
+
+                                        <svg class="frb-cc-logo-discover" xmlns="http://www.w3.org/2000/svg" aria-labelledby="frb-cc-logo-discover-title" width="200" height="120" viewBox="0 0 200 120"><title id="frb-cc-logo-discover-title">Discover</title><path fill="#fff" d="M8.06 6.18v107.64a4.13 4.13 0 0 0 4.13 4.12h114.5A58 58 0 0 0 184.76 60 58 58 0 0 0 126.7 2.06H12.2a4.13 4.13 0 0 0-4.14 4.12Z"></path><path fill="#231F20" d="M27.84 66.14c-1.57 1.4-3.6 2.02-6.82 2.02h-1.34V51.3h1.34c3.22 0 5.17.58 6.82 2.06a8.57 8.57 0 0 1 2.76 6.35c0 2.45-1.04 4.9-2.76 6.43Zm-5.82-19.16H14.7v25.5h7.28c3.87 0 6.66-.9 9.12-2.94a12.78 12.78 0 0 0 4.63-9.8c0-7.52-5.63-12.76-13.71-12.76ZM38.03 72.48H43v-25.5h-4.98v25.5ZM55.2 56.77c-3-1.11-3.87-1.84-3.87-3.22 0-1.6 1.56-2.82 3.7-2.82 1.5 0 2.73.61 4.03 2.06l2.6-3.4a11.2 11.2 0 0 0-7.5-2.83c-4.52 0-7.97 3.13-7.97 7.3 0 3.52 1.6 5.32 6.29 7 1.95.69 2.94 1.14 3.44 1.45 1 .65 1.5 1.57 1.5 2.64 0 2.06-1.65 3.6-3.88 3.6a5.9 5.9 0 0 1-5.43-3.4l-3.22 3.09c2.3 3.36 5.05 4.85 8.84 4.85 5.18 0 8.81-3.43 8.81-8.37 0-4.05-1.68-5.89-7.35-7.95ZM64.12 59.75c0 7.5 5.9 13.3 13.48 13.3 2.15 0 3.98-.42 6.25-1.48v-5.86c-2 2-3.76 2.8-6.02 2.8-5.02 0-8.58-3.64-8.58-8.8 0-4.9 3.68-8.76 8.35-8.76 2.38 0 4.18.85 6.25 2.87v-5.85a12.73 12.73 0 0 0-6.13-1.56c-7.55 0-13.6 5.92-13.6 13.34ZM123.36 64.1l-6.81-17.12h-5.45l10.84 26.16h2.69l11.03-26.16h-5.4l-6.9 17.13ZM137.92 72.48h14.13v-4.32h-9.15v-6.88h8.81v-4.32h-8.81V51.3h9.15v-4.32h-14.13v25.5ZM161.78 58.72h-1.45V51h1.53c3.1 0 4.8 1.3 4.8 3.78 0 2.56-1.7 3.94-4.88 3.94Zm10-4.21c0-4.78-3.3-7.53-9.04-7.53h-7.39v25.5h4.98V62.24h.65l6.9 10.24H174l-8.05-10.74c3.76-.77 5.82-3.33 5.82-7.23ZM174.8 48.62h-.09v-.58h.1c.27 0 .4.1.4.28 0 .2-.13.3-.4.3Zm.96-.3c0-.45-.31-.7-.86-.7h-.72v2.25h.53V49l.64.87h.65l-.74-.93c.32-.08.5-.31.5-.62Z"></path><path fill="#231F20" d="M175 50.36c-.86 0-1.56-.72-1.56-1.61 0-.9.7-1.61 1.56-1.61.86 0 1.56.73 1.56 1.6 0 .9-.7 1.62-1.56 1.62Zm0-3.58a1.96 1.96 0 0 0 0 3.92 1.96 1.96 0 0 0 0-3.92Z"></path><path fill="#F36719" d="M112.52 59.7c0 7.46-6.05 13.5-13.53 13.5a13.52 13.52 0 0 1-13.53-13.5c0-7.46 6.06-13.5 13.53-13.5 7.48 0 13.53 6.04 13.53 13.5Z"></path><path fill="#F36719" d="M184.75 60a58 58 0 0 1-58.05 57.94H12.2a4.13 4.13 0 0 1-4.14-4.12V6.18a4.13 4.13 0 0 1 4.13-4.12h114.5A58 58 0 0 1 184.76 60Zm3.06-60H12.19A6.19 6.19 0 0 0 6 6.18v107.64a6.18 6.18 0 0 0 6.2 6.18h175.6c3.43 0 6.2-2.77 6.2-6.18V6.18A6.19 6.19 0 0 0 187.8 0Z"></path></svg>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div data-name="PayPal" class="frb-button frb-pm-pp">
+                                <input id="frb-pm-pp" type="radio" name="frb-methods" class="frb-radio">
+                                <label for="frb-pm-pp" class="frb-label">
+                                    <svg class="frb-logo-payments frb-logo-payments--paypal white-on-select" role="img" aria-labelledby="frb-logo-paypal-title" width="80" height="24" viewBox="0 0 80 24" xmlns="http://www.w3.org/2000/svg"><title id="frb-logo-paypal-title">PayPal</title><g fill-rule="nonzero" fill="none"><path d="M12.444 5.085H6.97a.763.763 0 0 0-.752.648L4.006 19.891c-.044.279.17.53.451.53H7.07a.762.762 0 0 0 .751-.647l.597-3.819a.762.762 0 0 1 .75-.648h1.733c3.606 0 5.686-1.76 6.23-5.248.245-1.526.01-2.724-.698-3.564-.778-.922-2.158-1.41-3.99-1.41zm.631 5.171c-.3 1.981-1.8 1.981-3.25 1.981h-.826l.579-3.7a.457.457 0 0 1 .45-.388h.379c.988 0 1.92 0 2.402.569.288.339.376.842.266 1.538zM28.803 10.193h-2.62a.458.458 0 0 0-.451.388l-.116.74-.184-.269c-.567-.83-1.832-1.108-3.095-1.108-2.896 0-5.37 2.213-5.851 5.317-.25 1.548.105 3.029.976 4.061.799.95 1.941 1.345 3.301 1.345 2.334 0 3.628-1.513 3.628-1.513l-.117.734c-.044.281.17.533.45.533h2.36a.763.763 0 0 0 .752-.648l1.416-9.05a.457.457 0 0 0-.449-.53zm-3.653 5.145c-.253 1.51-1.441 2.525-2.957 2.525-.76 0-1.37-.246-1.76-.713-.387-.464-.534-1.123-.411-1.858.236-1.497 1.444-2.544 2.937-2.544.744 0 1.35.25 1.748.72.399.475.557 1.139.443 1.87zM42.761 10.193h-2.634a.761.761 0 0 0-.63.336l-3.632 5.398-1.54-5.187a.764.764 0 0 0-.73-.547h-2.587a.46.46 0 0 0-.433.608l2.9 8.588-2.726 3.884a.46.46 0 0 0 .372.727h2.63c.25 0 .483-.123.625-.33l8.76-12.755a.46.46 0 0 0-.375-.722" fill="#283B82"></path><path d="M51.48 5.085h-5.473a.762.762 0 0 0-.75.648l-2.214 14.158c-.044.279.17.53.45.53H46.3c.261 0 .485-.191.525-.453l.628-4.013a.762.762 0 0 1 .751-.648h1.732c3.606 0 5.686-1.76 6.23-5.248.246-1.526.01-2.724-.699-3.564-.777-.922-2.156-1.41-3.987-1.41zm.632 5.171c-.299 1.981-1.799 1.981-3.25 1.981h-.826l.58-3.7a.456.456 0 0 1 .45-.388h.379c.987 0 1.92 0 2.402.569.287.339.375.842.265 1.538zM67.84 10.193h-2.62a.455.455 0 0 0-.45.388l-.116.74-.184-.269c-.567-.83-1.832-1.108-3.094-1.108-2.897 0-5.37 2.213-5.851 5.317-.25 1.548.105 3.029.976 4.061.8.95 1.94 1.345 3.3 1.345 2.334 0 3.628-1.513 3.628-1.513l-.117.734c-.044.281.17.533.452.533h2.36a.762.762 0 0 0 .75-.648l1.417-9.05a.46.46 0 0 0-.452-.53zm-3.654 5.145c-.251 1.51-1.441 2.525-2.957 2.525-.76 0-1.37-.246-1.76-.713-.387-.464-.533-1.123-.41-1.858.237-1.497 1.444-2.544 2.936-2.544.744 0 1.35.25 1.748.72.4.475.56 1.139.443 1.87zM70.929 5.474L68.683 19.89c-.044.279.17.53.45.53h2.258a.761.761 0 0 0 .751-.647l2.215-14.157a.459.459 0 0 0-.45-.532H71.38a.458.458 0 0 0-.45.389" fill="#469BDB"></path></g></svg>
+                                </label>
+                            </div>
+
+                            
+
+                            <div data-name="Apple Pay" class="frb-button frb-pm-applepay">
+                                <input id="frb-pm-applepay" type="radio" name="frb-methods" class="frb-radio">
+                                <label for="frb-pm-applepay" class="frb-label">
+                                    <svg class="frb-logo-payments frb-logo-payments--applepay white-on-select" role="img" aria-labelledby="frb-logo-applepay-title" width="58" height="20" viewBox="0 0 512 210.2" xmlns="http://www.w3.org/2000/svg"><title id="frb-logo-applepay-title">Apple Pay</title><path d="M93.6 27.1C87.6 34.2 78 39.8 68.4 39c-1.2-9.6 3.5-19.8 9-26.1 6-7.3 16.5-12.5 25-12.9 1 10-2.9 19.8-8.8 27.1m8.7 13.8c-13.9-.8-25.8 7.9-32.4 7.9-6.7 0-16.8-7.5-27.8-7.3-14.3.2-27.6 8.3-34.9 21.2-15 25.8-3.9 64 10.6 85 7.1 10.4 15.6 21.8 26.8 21.4 10.6-.4 14.8-6.9 27.6-6.9 12.9 0 16.6 6.9 27.8 6.7 11.6-.2 18.9-10.4 26-20.8 8.1-11.8 11.4-23.3 11.6-23.9-.2-.2-22.4-8.7-22.6-34.3-.2-21.4 17.5-31.6 18.3-32.2-10-14.8-25.6-16.4-31-16.8m80.3-29v155.9h24.2v-53.3h33.5c30.6 0 52.1-21 52.1-51.4s-21.1-51.2-51.3-51.2h-58.5zm24.2 20.4h27.9c21 0 33 11.2 33 30.9s-12 31-33.1 31h-27.8V32.3zM336.6 169c15.2 0 29.3-7.7 35.7-19.9h.5v18.7h22.4V90.2c0-22.5-18-37-45.7-37-25.7 0-44.7 14.7-45.4 34.9h21.8c1.8-9.6 10.7-15.9 22.9-15.9 14.8 0 23.1 6.9 23.1 19.6v8.6l-30.2 1.8c-28.1 1.7-43.3 13.2-43.3 33.2 0 20.2 15.7 33.6 38.2 33.6zm6.5-18.5c-12.9 0-21.1-6.2-21.1-15.7 0-9.8 7.9-15.5 23-16.4l26.9-1.7v8.8c0 14.6-12.4 25-28.8 25zm82 59.7c23.6 0 34.7-9 44.4-36.3L512 54.7h-24.6l-28.5 92.1h-.5l-28.5-92.1h-25.3l41 113.5-2.2 6.9c-3.7 11.7-9.7 16.2-20.4 16.2-1.9 0-5.6-.2-7.1-.4v18.7c1.4.4 7.4.6 9.2.6z"></path></svg>
+                                </label>
+                            </div>
+
+                            <div data-name="Google Pay" class="frb-button frb-pm-google">
+                                <input id="frb-pm-google" type="radio" name="frb-methods" class="frb-radio">
+                                <label for="frb-pm-google" class="frb-label">
+                                    <svg class="frb-logo-payments frb-logo-payments--google" role="img" aria-labelledby="frb-logo-google-title" xmlns="http://www.w3.org/2000/svg" viewBox="170.7 170 752 400" width="48" height="24">
+                                        <title id="frb-logo-google-title">Google Pay</title>
+                                        <path fill="#FFF" d="M722.7 170h-352c-110 0-200 90-200 200s90 200 200 200h352c110 0 200-90 200-200s-90-200-200-200z"></path><path fill="#3C4043" d="M722.7 186.2c24.7 0 48.7 4.9 71.3 14.5 21.9 9.3 41.5 22.6 58.5 39.5 16.9 16.9 30.2 36.6 39.5 58.5 9.6 22.6 14.5 46.6 14.5 71.3s-4.9 48.7-14.5 71.3c-9.3 21.9-22.6 41.5-39.5 58.5-16.9 16.9-36.6 30.2-58.5 39.5-22.6 9.6-46.6 14.5-71.3 14.5h-352c-24.7 0-48.7-4.9-71.3-14.5-21.9-9.3-41.5-22.6-58.5-39.5-16.9-16.9-30.2-36.6-39.5-58.5-9.6-22.6-14.5-46.6-14.5-71.3s4.9-48.7 14.5-71.3c9.3-21.9 22.6-41.5 39.5-58.5 16.9-16.9 36.6-30.2 58.5-39.5 22.6-9.6 46.6-14.5 71.3-14.5h352m0-16.2h-352c-110 0-200 90-200 200s90 200 200 200h352c110 0 200-90 200-200s-90-200-200-200z"></path><g fill="#3C4043"><path d="M529.3 384.2v60.5h-19.2V295.3H561c12.9 0 23.9 4.3 32.9 12.9 9.2 8.6 13.8 19.1 13.8 31.5 0 12.7-4.6 23.2-13.8 31.7-8.9 8.5-19.9 12.7-32.9 12.7h-31.7v.1zm0-70.5v52.1h32.1c7.6 0 14-2.6 19-7.7 5.1-5.1 7.7-11.3 7.7-18.3 0-6.9-2.6-13-7.7-18.1-5-5.3-11.3-7.9-19-7.9h-32.1v-.1zM657.9 339.1c14.2 0 25.4 3.8 33.6 11.4 8.2 7.6 12.3 18 12.3 31.2v63h-18.3v-14.2h-.8c-7.9 11.7-18.5 17.5-31.7 17.5-11.3 0-20.7-3.3-28.3-10s-11.4-15-11.4-25c0-10.6 4-19 12-25.2 8-6.3 18.7-9.4 32-9.4 11.4 0 20.8 2.1 28.1 6.3v-4.4c0-6.7-2.6-12.3-7.9-17-5.3-4.7-11.5-7-18.6-7-10.7 0-19.2 4.5-25.4 13.6l-16.9-10.6c9.3-13.5 23.1-20.2 41.3-20.2zm-24.8 74.2c0 5 2.1 9.2 6.4 12.5 4.2 3.3 9.2 5 14.9 5 8.1 0 15.3-3 21.6-9s9.5-13 9.5-21.1c-6-4.7-14.3-7.1-25-7.1-7.8 0-14.3 1.9-19.5 5.6-5.3 3.9-7.9 8.6-7.9 14.1zM808.2 342.4l-64 147.2h-19.8l23.8-51.5-42.2-95.7h20.9l30.4 73.4h.4l29.6-73.4h20.9z"></path></g><path fill="#4285F4" d="M452.93 372c0-6.26-.56-12.25-1.6-18.01h-80.48v33l46.35.01c-1.88 10.98-7.93 20.34-17.2 26.58v21.41h27.59c16.11-14.91 25.34-36.95 25.34-62.99z"></path><path fill="#34A853" d="M400.01 413.58c-7.68 5.18-17.57 8.21-29.14 8.21-22.35 0-41.31-15.06-48.1-35.36h-28.46v22.08c14.1 27.98 43.08 47.18 76.56 47.18 23.14 0 42.58-7.61 56.73-20.71l-27.59-21.4z"></path><path fill="#FABB05" d="M320.09 370.05c0-5.7.95-11.21 2.68-16.39v-22.08h-28.46c-5.83 11.57-9.11 24.63-9.11 38.47s3.29 26.9 9.11 38.47l28.46-22.08a51.657 51.657 0 0 1-2.68-16.39z"></path><path fill="#E94235" d="M370.87 318.3c12.63 0 23.94 4.35 32.87 12.85l24.45-24.43c-14.85-13.83-34.21-22.32-57.32-22.32-33.47 0-62.46 19.2-76.56 47.18l28.46 22.08c6.79-20.3 25.75-35.36 48.1-35.36z"></path>
+                                    </svg>
+                                </label>
+                            </div>
+
+                            
+
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="frb-continue">
+                        <button class="frb-submit" id="frb-continue">
+                            <span class="frb-submit-txt-continue">Continue</span>
+                            <span class="frb-submit-txt-donate">
+                                <span class="frb-submit-txt-onetime">Donate <span class="frb-ptf-total frb-replaced"></span> one time</span>
+                                <span class="frb-submit-txt-monthly">Donate <span class="frb-ptf-total frb-replaced"></span> monthly</span>
+                                <span class="frb-submit-txt-annual">Donate <span class="frb-ptf-total frb-replaced"></span> annually</span>
+                            </span>
+                        </button>
+                    </fieldset>
+
+                    <div class="frb-error frb-error-smallamount">Please select an amount (minimum £0.77)</div>
+                    <div class="frb-error frb-error-bigamount">We cannot accept donations greater than 19250 GBP through our website. Please contact our major gifts staff at benefactors@wikimedia.org.</div>
+                    <div class="frb-error frb-error-method">Please select a payment method</div>
+
+                    <button class="frb-rml-link">
+                        Maybe later
+                    </button>
+
+                </div>
+
+                <div class="frb-step frb-step-optin">
+
+                    <button class="frb-back skin-invert" aria-label="Back"></button>
+
+                    <fieldset class="frb-fieldset frb-optin">
+                        <legend>
+                            Can we follow up and let you know if we need your help again? <span class="frb-explanation">The support and advice we get from donors in <span class="frb-replace-countryname">the UK</span> is priceless, but many donors don't let us stay in touch. Will you commit today, this <span class="frb-replace-dayofweek">Friday</span>, to staying in touch with the Wikimedia Foundation?</span>
+                        </legend>
+                        <ul>
+                            <li class="frb-button">
+                                <input class="frb-optin frb-radio" type="radio" name="opt_in" id="frb-optin-yes" value="1">
+                                <label class="frb-label" for="frb-optin-yes">Yes</label>
+                            </li>
+                            <li class="frb-button">
+                                <input class="frb-optin frb-radio" type="radio" name="opt_in" id="frb-optin-no" value="0">
+                                <label class="frb-label" for="frb-optin-no">No</label>
+                            </li>
+                        </ul>
+                        <div class="frb-optin-no-prompt">
+                            <div class="frb-optin-no-prompt__no">Sorry to hear that. We don't email often; would you consider changing your mind?</div>
+                            <div class="frb-optin-no-prompt__yes">Thanks for changing your mind! We’ll respect your inbox.</div>
+                        </div>
+                        <div class="frb-optin-smallprint frb-smallprint">
+                            Your information is handled in accordance with our <a href="https://foundation.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Donor_privacy_policy&amp;language=en" target="_blank">donor privacy policy</a>, and each email you receive will include easy unsubscribe options.
+                        </div>
+                    </fieldset>
+
+                    <button id="frb-donate" class="frb-submit">
+                        Continue
+                    </button>
+
+                    <div class="frb-error frb-error-optin">Please select an email option</div>
+
+                </div>
+
+                <dialog id="frb-dialog-upsell" class="frb frb-dialog frb-rml-enabled frb-annual-enabled">
+                    <div class="frb-step-upsell">
+
+                        <button class="frb-back skin-invert" aria-label="Back"></button>
+
+                        <div class="frb-dialog-title">
+                            <svg class="frb-icon frb-icon-heart" aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 66"><path d="M66 20.8C66 9.3 57.6 0 47.3 0 41.6 0 36.4 2.9 33 7.4 29.6 2.9 24.4 0 18.7 0 8.4 0 0 9.3 0 20.8 0 27 2.5 32.5 6.3 36.3L33.1 66l28-31.2c3-3.7 4.9-8.6 4.9-14z"></path></svg>
+                            Almost done: Please, make it <span class="frb-upsell-ask frb-replaced"></span>&nbsp;monthly.
+                        </div>
+                        <div class="frb-dialog-text">Monthly support is the best way to ensure that Wikipedia keeps thriving.</div>
+
+                        <button id="frb-monthly-donate-no" class="frb-submit active">
+                            No thanks! I'll make a one-time donation of <span class="frb-ptf-total frb-replaced"></span>
+                        </button>
+                        <button id="frb-monthly-donate-yes" class="frb-submit active">
+                            Yes, I'll donate <span class="frb-upsell-ask frb-replaced"></span> each month
+                        </button>
+                        <button class="frb-monthly-diff-amt-link">
+                            Yes, I'll donate monthly, but for a different amount
+                        </button>
+
+                    </div>
+
+                    <div class="frb-step-monthly-diff-amt" style="display: none;">
+
+                        <button class="frb-back skin-invert" aria-label="Back"></button>
+
+                        <div class="frb-dialog-title">Thank you for your support!</div>
+                        <div class="frb-dialog-text">
+                            <label for="frb-amt-monthly-other-input">Enter your monthly donation amount</label>
+                            <input name="otherMonthlyAmount" type="text" inputmode="decimal" id="frb-amt-monthly-other-input" size="3" autocomplete="off" value="">
+                        </div>
+                        <div class="frb-error frb-error-smallamount">Please select an amount (minimum £0.77)</div>
+                        <div class="frb-error frb-error-bigamount">We cannot accept donations greater than 19250 GBP through our website. Please contact our major gifts staff at benefactors@wikimedia.org.</div>
+                        <button id="frb-donate-monthly-other" class="frb-submit">
+                            Donate <span class="frb-monthly-total"></span> monthly
+                        </button>
+
+                    </div>
+                </dialog>
+
+            </form>
+
+        </div>
+
+        <div class="frb-footer frb-smallprint frb-localize-links">
+
+            <a href="https://donate.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Problems_donating&amp;country=GB&amp;language=en&amp;uselang=en&amp;wmf_medium=sitenotice&amp;wmf_campaign=test&amp;wmf_source=trilogy_B2526_0204_mlWW_dsk_p1_lg_WP25template_RMLFormTesting" target="_blank">Problems donating?</a>
+
+            &nbsp;|&nbsp;
+
+            <a href="https://donate.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=FAQ&amp;country=GB&amp;language=en&amp;uselang=en&amp;wmf_medium=sitenotice&amp;wmf_campaign=test&amp;wmf_source=trilogy_B2526_0204_mlWW_dsk_p1_lg_WP25template_RMLFormTesting" target="_blank">Frequently asked questions</a>
+
+            &nbsp;|&nbsp;
+
+            <button class="frb-wydg-link">Where your donation goes</button>
+
+            &nbsp;|&nbsp;
+
+            <a id="frb-otherways-link" href="https://donate.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Ways_to_Give&amp;country=GB&amp;language=en&amp;uselang=en&amp;wmf_medium=sitenotice&amp;wmf_campaign=test&amp;wmf_source=trilogy_B2526_0204_mlWW_dsk_p1_lg_WP25template_RMLFormTesting" target="_blank">Other ways to give</a>
+
+            &nbsp;|&nbsp;
+
+            <span class="frb-footer-button frb-iad">
+                <button type="button" class="frb-iad-link">
+                    <span class="frb-already-donated-text">I already donated</span>
+                </button>
+            </span>
+
+            <div class="frb-footer-legal">
+                <span class="frb-legal-nonUS">We never sell your information. By submitting, you are agreeing to our <a href="https://foundation.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Donor_privacy_policy&amp;language=en" target="_blank">donor privacy policy</a> and to sharing your information with the <a href="https://donate.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Tax_deductibility&amp;language=en" target="_blank">Wikimedia Foundation</a> and its service providers in the USA and elsewhere. Donations to the Wikimedia Foundation are likely not tax-deductible outside the USA.</span>
+                <span class="frb-legal-US" style="display: none;">We never sell your information. By submitting, you are agreeing to our <a href="https://foundation.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Donor_privacy_policy&amp;language=en" target="_blank">donor privacy policy</a>. The Wikimedia Foundation is a nonprofit, <a href="https://donate.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Tax_deductibility&amp;language=en" target="_blank">tax-exempt organization</a>.</span>
+                <span class="frb-legal-NL" style="display: none;">We never sell your information. By submitting, you are agreeing to our <a href="https://foundation.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Donor_privacy_policy&amp;language=en" target="_blank">donor privacy policy</a> and to sharing your information with the Wikimedia Foundation and its service providers in the U.S. and elsewhere. The Wikimedia Foundation is a recognized <a href="https://donate.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Tax_deductibility&amp;language=en" target="_blank">public welfare institution (ANBI)</a>.</span>
+                <span class="recurring-details">If you make a recurring donation, you will be debited by the Wikimedia Foundation until you notify us to stop. We’ll send you an email which will include a link to <a href="https://donate.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Cancel_or_change_recurring_giving&amp;language=en" target="_blank">easy cancellation instructions</a>.</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="frb frb-nag frb-rml-enabled frb-annual-enabled" style="display: none;">
+    <div class="frb-nag-layout">
+        <div class="frb-message">
+            <div>
+                <svg class="frb-message-icon" role="img" aria-hidden="true" width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"><g fill-rule="nonzero" fill="none"><circle cx="10.492" cy="14.492" r="10.492"></circle><path d="M12.681 11.754l-2.267 7.864c-.125.45-.188.745-.188.885 0 .08.033.156.1.226.066.07.136.105.21.105.125 0 .25-.055.376-.165.332-.273.73-.767 1.194-1.482l.376.22c-1.113 1.94-2.296 2.91-3.55 2.91-.48 0-.86-.135-1.144-.404a1.349 1.349 0 0 1-.426-1.023c0-.273.062-.62.188-1.04l1.537-5.286c.147-.51.221-.892.221-1.15a.566.566 0 0 0-.21-.432c-.14-.125-.332-.188-.575-.188-.11 0-.243.004-.398.011l.144-.442 3.749-.609h.663zm-.685-5.087c.457 0 .842.159 1.156.475.313.318.47.701.47 1.15 0 .45-.16.834-.476 1.15-.317.318-.7.476-1.15.476-.443 0-.822-.158-1.14-.475a1.566 1.566 0 0 1-.475-1.15c0-.45.157-.833.47-1.15a1.549 1.549 0 0 1 1.145-.476z"></path></g></svg>
+                Sorry to interrupt, but fewer people are seeing our message this month, and time will soon run out. Please, donate <span class="frb-replaced">£2.75</span>.
+            </div>
+        </div>
+        <div class="frb-form-wrapper">
+            <button class="frb-icon-btn frb-close skin-invert" aria-label="Close"></button>
+            <div class="frb-nag-btns">
+                <button id="nag-rml-btn" class="frb-nag-btn" tabindex="0">No, but maybe later when I have more time</button>
+                <button id="nag-yes-btn" class="frb-nag-btn" tabindex="0">Yes, I'll donate <span class="frb-replaced">£2.75</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<dialog id="frb-dialog-rml" class="frb frb-dialog frb-rml-enabled frb-annual-enabled" closedby="any">
+
+    <div class="frb-rml-intro">
+        <button class="frb-dialog-close frb-back skin-invert" aria-label="Back"></button>
+
+        <div class="frb-dialog-title">How would you like to be reminded?</div>
+        <div class="frb-dialog-text">Whether you give now or later, any contribution helps. We can send you an email or text message reminder to join the 2% of readers who donate.</div>
+
+        <button class="frb-submit frb-rml-btn active" id="frb-rml-email-btn">Send me an email</button>
+        <button class="frb-submit frb-rml-btn active" id="frb-rml-text-btn">Send me a text message</button>
+    </div>
+
+    <div class="frb-rml-form-wrapper frb-rml-form-email" style="display:none;">
+        <button class="frb-rml-form-back frb-back skin-invert" aria-label="Back"></button>
+
+        <form method="post" action="https://app.goacoustic.com/content/api/delivery/v1/contact/9644238" class="frb-rml-form" id="frb-rml-form-email">
+            <input type="hidden" name="rml_source" value="trilogy_B2526_0204_mlWW_dsk_p1_lg_WP25template_RMLFormTesting">
+            <input type="hidden" name="rml_group" value="dsk_lg">
+            <input type="hidden" name="rml_country" value="GB">
+            <input type="hidden" name="rml_language" value="en">
+            <input type="hidden" name="rml_submitDate" value="03/06/2026">
+            <input type="hidden" name="rml_segment" value="10">
+            <input class="campaign-id" type="hidden" value="af111b1f-bc8b-4edc-a743-408594312f99">
+            <input type="hidden" name="x-acoustic-content-id" value="814409236289712128">
+            <input type="hidden" name="x-acoustic-api-url" value="https://content-us-1.content-cms.com/api/81cc941f-4df3-4c73-bb0f-f1b51d830675/">
+            <input type="hidden" name="x-acoustic-instance-id" value="Pod4">
+            <input type="hidden" name="x-acoustic-tenant-id" value="81cc941f-4df3-4c73-bb0f-f1b51d830675">
+
+            <div class="frb-dialog-title">
+                Send me an email reminder
+            </div>
+            <div class="frb-dialog-text">
+                We’ll gladly send you an email reminder and get out of your way so you can get back to reading.
+            </div>
+
+            <label class="frb-rml-form-legend" for="frb-rml-email">Email address</label>
+            <input type="email" name="Email" id="frb-rml-email" dir="ltr" autocomplete="email" autofocus="">
+
+            <button class="frb-submit active" id="frb-rml-submit" type="submit">Submit</button>
+
+            <div class="frb-error frb-error-invalidemail" style="display: none;">
+                Please enter a valid email address i.e. name@domain.com
+            </div>
+
+            <div class="frb-smallprint frb-localize-links">
+                <span class="frb-legal-US" style="display: none;">We never sell your information. By submitting, you are agreeing to our <a href="https://foundation.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Donor_privacy_policy&amp;language=en" target="_blank">donor privacy policy</a>. The Wikimedia Foundation is a nonprofit, <a href="https://donate.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Tax_deductibility&amp;language=en" target="_blank">tax-exempt organization</a>.</span>
+                <span class="frb-legal-NL" style="display: none;">We never sell your information. By submitting, you are agreeing to our <a href="https://foundation.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Donor_privacy_policy&amp;language=en" target="_blank">donor privacy policy</a> and to sharing your information with the Wikimedia Foundation and its service providers in the U.S. and elsewhere. The Wikimedia Foundation is a recognized <a href="https://donate.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Tax_deductibility&amp;language=en" target="_blank">public welfare institution (ANBI)</a>.</span>
+                <span class="frb-legal-nonUS">We never sell your information. By submitting, you are agreeing to our <a href="https://foundation.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Donor_privacy_policy&amp;language=en" target="_blank">donor privacy policy</a> and to sharing your information with the <a href="https://donate.wikimedia.org/wiki/Special:LandingCheck?basic=true&amp;landing_page=Tax_deductibility&amp;language=en" target="_blank">Wikimedia Foundation</a> and its service providers in the USA and elsewhere. Donations to the Wikimedia Foundation are likely not tax-deductible outside the USA.</span>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="frb-rml-form-wrapper frb-rml-form-phone" style="display:none;">
+        <button class="frb-rml-form-back frb-back skin-invert" aria-label="Back"></button>
+
+        <form method="post" action="https://app.goacoustic.com/content/api/delivery/v1/contact/9644238" class="frb-rml-form" id="frb-rml-form-phone">
+            <input type="hidden" name="rml_source" value="trilogy_B2526_0204_mlWW_dsk_p1_lg_WP25template_RMLFormTesting">
+            <input type="hidden" name="rml_group" value="dsk_lg">
+            <input type="hidden" name="rml_country" value="GB">
+            <input type="hidden" name="rml_language" value="en">
+            <input type="hidden" name="rml_submitDate" value="03/06/2026">
+            <input type="hidden" name="rml_segment" value="43">
+            <input class="campaign-id" type="hidden" value="af111b1f-bc8b-4edc-a743-408594312f99">
+            <input type="hidden" name="x-acoustic-content-id" value="646249452842143744">
+            <input type="hidden" name="x-acoustic-api-url" value="https://content-us-1.content-cms.com/api/81cc941f-4df3-4c73-bb0f-f1b51d830675/">
+            <input type="hidden" name="x-acoustic-instance-id" value="Pod4">
+            <input type="hidden" name="x-acoustic-tenant-id" value="81cc941f-4df3-4c73-bb0f-f1b51d830675">
+
+            <div class="frb-dialog-title">Send me a reminder</div>
+            <div class="frb-dialog-text">We’ll gladly send you a reminder and get out of your way so you can get back to reading.</div>
+
+            <label class="frb-rml-form-legend" for="frb-rml-phone">Mobile phone number</label>
+            <input type="tel" name="phone_input" id="frb-rml-phone" placeholder="(201) 555-0123" dir="ltr" autocomplete="tel" autofocus="">
+
+            <input type="checkbox" id="frb-rml-phone-opt-in" name="$sms_consent" style="width:14px; height:14px; margin-bottom:0;">
+            <label for="frb-rml-phone-opt-in" class="frb-dialog-text">
+                I would like to receive text messages such as donation reminders and appeals from Wikimedia at the number I have provided.
+            </label>
+
+            <button class="frb-submit active" id="frb-rml-submit" type="submit">Submit</button>
+
+            <div class="frb-error frb-error-invalidphone" style="display: none;">
+                Please enter a valid phone number e.g. (201) 555-0123
+            </div>
+            <div id="frb-error-consentphone" class="frb-error" style="display: none;">
+                Please check the box to consent to receive messages.
+            </div>
+
+            <div class="frb-smallprint">
+                By participating, you consent to receive recurring updates through automated text messages from Wikimedia to the phone number you provide. Message frequency varies. For text messages, Msg&amp;Data rates may apply. Text STOP to cancel or HELP for help. <a target="_blank" href="https://foundation.wikimedia.org/wiki/Policy:Donor_SMS_Supplementary_Terms">Terms of Service and Privacy Policy.</a>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="frb-rml-ty" style="display: none;">
+        Thank you! We will send you a reminder.
+    </div>
+
+</dialog>
+
+<dialog id="frb-dialog-iad" class="frb frb-dialog frb-rml-enabled frb-annual-enabled" closedby="any">
+
+    <button class="frb-dialog-close frb-back skin-invert" aria-label="Back"></button>
+
+    <div class="frb-w25-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" version="1.1" viewBox="0 0 253.9 108.81"><defs><style>.stw0{fill:#fff}</style></defs><path d="M137.48 1.5c0 .49-.17.93-.49 1.35-.29.42-.61.61-.98.61-3.01.29-5.48 1.26-7.4 2.93-1.91 1.63-3.9 4.76-5.94 9.4l-31.2 70.16c-.2.66-.78.98-1.72.98-.73 0-1.3-.32-1.72-.98L70.54 49.43 50.41 85.95c-.42.66-.98.98-1.71.98-.91 0-1.49-.32-1.78-.98L16.28 15.79c-1.91-4.37-3.93-7.39-6.06-9.1C8.1 4.94 5.14 3.86 1.35 3.45c-.32 0-.64-.17-.92-.49C.14 2.59 0 2.18 0 1.74 0 .6.32.02.98.02c2.73 0 5.59.13 8.56.37 2.77.24 5.38.37 7.83.37S22.8.64 26.18.39C29.72.15 32.87.02 35.6.02c.66 0 .98.56.98 1.71s-.2 1.71-.61 1.71c-2.73.2-4.89.9-6.48 2.08-1.54 1.17-2.33 2.73-2.33 4.64 0 .98.32 2.2.98 3.66l25.32 57.09L67.83 43.8 54.44 15.77c-2.4-5-4.37-8.22-5.94-9.65-1.54-1.47-3.9-2.36-7.03-2.69-.29 0-.56-.17-.86-.49-.24-.37-.37-.78-.37-1.22 0-1.14.29-1.71.86-1.71 2.73 0 5.23.12 7.52.37 2.2.24 4.55.37 7.03.37s5.04-.12 7.77-.37a98.1 98.1 0 0 1 8.32-.37c.66 0 .98.56.98 1.71s-.2 1.71-.61 1.71c-5.46.37-8.2 1.91-8.2 4.64 0 1.22.64 3.12 1.9 5.69l8.87 17.95 8.81-16.42c1.23-2.32 1.84-4.27 1.84-5.86 0-3.74-2.73-5.73-8.2-5.98-.49 0-.73-.56-.73-1.71 0-.42.12-.8.37-1.16.24-.37.49-.55.73-.55 1.96 0 4.37.12 7.22.37 2.73.24 4.99.37 6.72.37 1.26 0 3.12-.1 5.57-.3 3.1-.29 5.7-.43 7.77-.43.49 0 .73.49.73 1.47 0 1.3-.44 1.96-1.35 1.96-3.17.32-5.74 1.2-7.71 2.63-1.91 1.42-4.32 4.66-7.22 9.71L77.48 37.49l15.9 32.37 23.48-54.53c.81-1.99 1.22-3.83 1.22-5.49 0-3.99-2.73-6.1-8.2-6.35-.49 0-.73-.56-.73-1.71s.37-1.71 1.1-1.71c2 0 4.37.12 7.09.37 2.52.24 4.64.37 6.36.37s3.87-.12 6.23-.37c2.45-.24 4.64-.37 6.6-.37.56 0 .86.49.86 1.47h.06ZM242.54 28.07c-2.29 0-4.51.92-6.41 2.68-.47.43-1.04.67-1.67.67s-1.26-.24-1.73-.67c-.49-.47-.77-1.1-.77-1.79V.06h-28.95c-.69 0-1.32.27-1.79.77-.43.46-.67 1.09-.67 1.72s.23 1.19.67 1.66c1.76 1.9 2.68 4.1 2.68 6.4 0 6.25-6.93 11.34-15.45 11.34S173 16.86 173 10.61c0-2.29.92-4.5 2.7-6.4.43-.46.67-1.04.67-1.66s-.25-1.26-.67-1.72c-.47-.49-1.1-.77-1.79-.77h-28.95v28.9c0 .68.28 1.32.77 1.79.47.43 1.09.67 1.73.67s1.19-.23 1.67-.67c1.9-1.76 4.1-2.68 6.41-2.68 6.26 0 11.36 6.92 11.36 15.42s-5.1 15.42-11.36 15.42c-2.29 0-4.51-.92-6.41-2.68-.47-.43-1.04-.67-1.67-.67s-1.26.24-1.73.67c-.49.47-.77 1.1-.77 1.78v28.9h28.95c.69 0 1.32.28 1.79.77.43.47.67 1.09.67 1.72s-.23 1.19-.67 1.66c-1.76 1.9-2.68 4.1-2.68 6.4 0 6.25 6.93 11.34 15.45 11.34s15.45-5.09 15.45-11.34c0-2.29-.93-4.5-2.7-6.4-.43-.47-.67-1.04-.67-1.66s.24-1.26.67-1.72c.47-.49 1.1-.77 1.79-.77h28.95v-28.9c0-.68.28-1.32.77-1.78.47-.43 1.09-.67 1.73-.67s1.19.23 1.67.67c1.9 1.76 4.1 2.68 6.41 2.68 6.26 0 11.36-6.92 11.36-15.42s-5.1-15.42-11.36-15.42Zm-69.48 37.54h-.04l.16-1.7c.24-.78.94-1.77 2.12-2.98 1.16-1.2 3.52-3.28 7.07-6.22l5.19-4.32a19.9 19.9 0 0 0 2.22-2.16 12 12 0 0 0 1.58-2.4c.43-.86.75-1.78.94-2.76.21-.98.31-2.04.31-3.19 0-1.24-.31-2.3-.93-3.21-.62-.91-1.41-1.36-2.35-1.36-1.13 0-2.21.35-3.22 1.05-1.02.7-1.59 1.41-1.74 2.09-.09.43-.09.89 0 1.38.06.55.06.94.03 1.17-.12.54-.37 1.03-.75 1.44-.38.43-.81.75-1.3.98-.49.22-.99.33-1.47.33s-.94-.12-1.31-.35a2.11 2.11 0 0 1-.82-.91c-.18-.37-.26-.75-.26-1.15 0-.62.16-1.27.45-1.91.31-.65.72-1.27 1.25-1.86.54-.59 1.15-1.15 1.86-1.66.71-.53 1.48-.98 2.32-1.38 2.02-.95 4.2-1.43 6.58-1.43s4.23.56 5.78 1.7c1.56 1.14 2.35 2.76 2.35 4.85 0 .91-.07 1.74-.24 2.51-.17.77-.49 1.54-.99 2.32-.49.79-.97 1.48-1.42 2.07-.45.59-1.18 1.34-2.21 2.25-1.02.92-1.91 1.67-2.66 2.29-.76.61-1.9 1.53-3.39 2.73l-3.58 2.84c-1.67 1.32-2.78 2.9-3.34 4.73h6.52c1.15 0 2.18-.39 3.12-1.17.56-.48 1.14-1.15 1.7-2.01-.09.06 2.42 1.17 2.39 1.15-.93 2.63-1.79 4.72-2.56 6.25h-19.36Zm44.96-18.33h-.03c-.47.05-1.1.09-1.9.16l-1.58.12c-.26.02-.61.04-1.05.06-.44.02-.88.02-1.31.02-3.08 0-5.48-.1-7.22-.29-.34.89-1.18 3.24-2.45 7.06.65-.16 1.63-.3 2.94-.46 1.32-.16 2.36-.23 3.14-.23 2.46 0 4.37.65 5.74 1.93 1.36 1.28 2.04 3 2.04 5.11 0 4.12-1.75 7.75-5.23 10.93-2.61 2.36-5.49 3.53-8.65 3.53s-5.5-.49-7.06-1.48c-.97-.62-1.46-1.42-1.46-2.4 0-.77.31-1.44.91-2.04s1.35-.91 2.23-.91c1.67 0 2.78.68 3.34 2.08.62 1.6 1.37 2.4 2.24 2.4 1.43 0 2.73-.76 3.86-2.27.75-1 1.42-2.46 2.03-4.35.61-1.9.92-3.68.92-5.38 0-.93-.16-1.74-.47-2.38-.31-.65-.71-1.11-1.2-1.4-.49-.28-1.04-.42-1.64-.42-1.2 0-2.23.11-3.08.33-.85.22-4.64 1.04-4.64 1.04l5.39-15.87c.59.06 1.6.16 3.05.31 1.43.15 2.56.22 3.37.22.71 0 1.43-.02 2.16-.06.73-.05 1.34-.09 1.83-.13.49-.05 1.24-.12 2.24-.23 1-.11 1.83-.2 2.45-.24l.99.67L218 47.3Z" class="stw0"></path></svg>
+    </div>
+
+    <div class="frb-dialog-title">
+        Thank you for donating recently!
+    </div>
+
+    <div class="frb-dialog-text">
+        Your support means the world to us. We'll hide banners in this browser for the rest of our campaign.
+    </div>
+
+    <div class="frb-iad-buttons">
+        <button class="frb-dialog-close frb-dialog-simple-close" name="frb-iad-hide-button">
+            Close
+        </button>
+    </div>
+
+    <div class="frb-fireworks"></div>
+
+</dialog>
+
+<dialog id="frb-dialog-wydg" class="frb frb-dialog frb-rml-enabled frb-annual-enabled" closedby="any">
+
+    <button class="frb-dialog-close frb-back skin-invert" aria-label="Back"></button>
+
+    <div class="frb-dialog-title">Where your donation goes</div>
+
+    <div class="frb-dialog-text">
+        <div class="wydg-intro">
+            Accountability and transparency are core values at the Wikimedia Foundation. We manage funds and resources to ensure that every contribution supports our mission. We have earned the Platinum Seal of Transparency from Candid (formerly GuideStar), and Charity Navigator awarded us its highest rating. You can <a href="https://wikimediafoundation.org/annualreports/2023-2024-annual-report?language=en" target="_blank">read our most recent annual report</a> for more information about our financial health.
+        </div>
+
+        <div class="wydg-columns">
+            <svg class="wydg-pie-chart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="360" height="360" viewBox="0 0 410 410">
+                <style>
+                    .wydg-pie-chart text {
+                        text-anchor: middle;
+                        fill: var(--frb-body, #000);
+                        font-family: sans-serif;
+                    }
+                    .wydg-pie-chart .arc,
+                    .wydg-pie-chart .arc-expanded {
+                        translate: 200px 200px;
+                    }
+                    .wydg-pie-chart .pct-label {
+                        pointer-events: none;
+                        font-size: 20px;
+                        font-weight: 700;
+                        fill: #000;
+                    }
+                    .wydg-pie-chart .center-number {
+                        transform: translate(200px, 195px);
+                        font-size: 24px;
+                        font-weight: 700;
+                        pointer-events: none;
+                    }
+                    .wydg-pie-chart .center-description {
+                        transform: translate(200px, 217px);
+                        font-size: 16px;
+                        font-weight: 400;
+                        pointer-events: none;
+                    }
+
+                    .wydg-pie-chart .arc {
+                        display: block !important;
+                    }
+
+                    .wydg-pie-chart .pie-slice * {
+                        opacity: 0;
+                    }
+                    .wydg-pie-chart .pie-slice .arc {
+                        opacity: 1;
+                    }
+
+                    .wydg-pie-chart .pie-slice:hover * {
+                        opacity: 1;
+                    }
+
+                    .wydg-pie-chart .pie-slice:hover ~ .wydg-total {
+                        opacity: 0;
+                    }
+                </style>
+                <g fill="none" stroke-miterlimit="10" transform="translate(5,5)">
+                    <g class="pie-slice wydg-technology">
+                        <path class="arc" d="M63.217,163.183A175,175,0,0,0,0,-175L0,-100A100,100,0,0,1,36.124,93.247Z" fill="#71d1b3"></path>
+                        <path class="arc-expanded" d="M72.248,186.494A200,200,0,0,0,0,-200L0,-100A100,100,0,0,1,36.124,93.247Z" fill="#71d1b3"></path>
+                        <text class="pct-label" transform="translate(344.10385641365997,179.06232068809078)">45%</text>
+                        <text class="center-number">$80.3M</text>
+                        <text class="center-description">Technology</text>
+                    </g>
+                    <g class="pie-slice wydg-support">
+                        <path class="arc" d="M-172.929,-26.844A175,175,0,0,0,63.217,163.183L36.124,93.247A100,100,0,0,1,-98.817,-15.339Z" fill="#049dff"></path>
+                        <path class="arc-expanded" d="M-197.633,-30.678A200,200,0,0,0,72.248,186.494L36.124,93.247A100,100,0,0,1,-98.817,-15.339Z" fill="#049dff"></path>
+                        <text class="pct-label" transform="translate(108.09297005592403,320.2132122254633)">34%</text>
+                        <text class="center-number">$60.7M</text>
+                        <text class="center-description">Support</text>
+                    </g>
+                    <g class="pie-slice wydg-general">
+                        <path class="arc" d="M-109.712,-136.339A175,175,0,0,0,-172.929,-26.844L-98.817,-15.339A100,100,0,0,1,-62.692,-77.908Z" fill="#e679a6"></path>
+                        <path class="arc-expanded" d="M-125.385,-155.816A200,200,0,0,0,-197.633,-30.678L-98.817,-15.339A100,100,0,0,1,-62.692,-77.908Z" fill="#e679a6"></path>
+                        <text class="pct-label" transform="translate(73.0406758052013,132.7)">12%</text>
+                        <text class="center-number">$21.4M</text>
+                        <text class="center-description">General</text>
+                    </g>
+                    <g class="pie-slice wydg-fundraising">
+                        <path class="arc" d="M0,-175A175,175,0,0,0,-109.712,-136.339L-62.692,-77.908A100,100,0,0,1,0,-100Z" fill="#f9dde9"></path>
+                        <path class="arc-expanded" d="M0,-200A200,200,0,0,0,-125.385,-155.816L-62.692,-77.908A100,100,0,0,1,0,-100Z" fill="#f9dde9"></path>
+                        <text class="pct-label" transform="translate(151.2767863962819,67.73355990651072)">11%</text>
+                        <text class="center-number">$19.6M</text>
+                        <text class="center-description">Fundraising</text>
+                    </g>
+                    <g class="wydg-total">
+                        <text class="center-number">$178.4M</text>
+                        <text class="center-description">Total Funding</text>
+                    </g>
+                </g>
+            </svg>
+            <div>
+                <details class="wydg-section wydg-technology">
+                    <summary>
+                        <span>45%</span>
+                        Investment in Technology
+                    </summary>
+                    <p>
+                        Nearly half of our budget goes toward supporting the technology that powers Wikipedia and other Wikimedia projects. We are constantly working to enhance the user experience for both contributors and readers, improve site security, and ensure reliable access to our websites globally. This infrastructure and product support sustain one of the top ten most visited websites in the world, all at a fraction of the cost of popular for-profit websites.
+                    </p>
+                </details>
+                <details class="wydg-section wydg-volunteers">
+                    <summary>
+                        <span>34%</span>
+                        Support for Volunteers
+                    </summary>
+                    <p>
+                        The global reach of Wikimedia projects is made possible by the hard work of volunteers from across the globe. We provide grants, legal support, and other resources to help build vibrant volunteer communities. Additionally, we promote community engagement through outreach initiatives and advocate for the growth and protection of free knowledge.
+                    </p>
+                </details>
+                <details class="wydg-section wydg-general">
+                    <summary>
+                        <span>12%</span>
+                        General and Administrative Expenses
+                    </summary>
+                    <p>
+                        Operational costs are essential for the smooth management and governance of the Wikimedia Foundation. These expenses help us recruit top talent and support staff around the world, empowering them to carry out the mission of the Wikimedia Foundation.
+                    </p>
+                </details>
+                <details class="wydg-section wydg-fundraising">
+                    <summary>
+                        <span>11%</span>
+                        Allocation to Fundraising Efforts
+                    </summary>
+                    <p>
+                        Donor support is crucial to sustaining Wikipedia and our other free knowledge endeavors. Our team is committed to efficient and effective fundraising throughout the year, ensuring that every contribution helps advance our mission.
+                    </p>
+                </details>
+            </div>
+        </div>
+
+    </div>
+
+</dialog>
+

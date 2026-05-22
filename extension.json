@@ -1,0 +1,54 @@
+{
+	"name": "NativePayments",
+	"version": "1.0.0",
+	"author": [
+		"Wikimedia Foundation"
+	],
+	"descriptionmsg": "nativepayments-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\NativePayments\\": "includes/"
+	},
+	"MessagesDirs": {
+		"NativePayments": [
+			"i18n"
+		]
+	},
+	"Hooks": {
+		"BeforePageDisplay": "MediaWiki\\Extension\\NativePayments\\Hooks::onBeforePageDisplay",
+		"SiteNoticeAfter": "MediaWiki\\Extension\\NativePayments\\Hooks::onSiteNoticeAfter"
+	},
+	"ResourceModules": {
+		"ext.nativePayments": {
+			"scripts": [
+				"ext.nativePayments/init.js"
+			],
+			"dependencies": [
+				"mediawiki.base"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "NativePayments/resources"
+	},
+	"config": {
+		"NativePaymentsApiBase": {
+			"value": "",
+			"description": "Base URL of the payments wiki. Empty string means same-origin install."
+		},
+		"NativePaymentsEnableTestBanner": {
+			"value": false,
+			"description": "Whether to inject the bundled test fundraising banner via SiteNoticeAfter. For local prototype use only — never enable in production."
+		}
+	},
+	"manifest_version": 2
+}
