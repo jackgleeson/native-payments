@@ -36,6 +36,58 @@ mw.nativePayments.attach( target, options ) // wire a click handler on target
 
 Amount must satisfy `1 ≤ x ≤ 12000` in major units of the detected currency (from `navigator.language`). Invalid amounts make `pay()` a silent no-op.
 
+## Samples
+
+In any JS loaded on the page:
+
+**Fixed amount, single button**:
+
+```js
+mw.loader.using( 'ext.nativePayments' ).then( () => {
+    mw.nativePayments.attach( '#donate-25', { amount: 25 } );
+} );
+```
+
+**Custom amount input, pinned to Google Pay**:
+
+```js
+mw.loader.using( 'ext.nativePayments' ).then( () => {
+    const input = document.getElementById( 'donate-amount' );
+    mw.nativePayments.attach( '#pay-google', {
+        amount: () => input.value,
+        paymentMethod: 'google',
+        onSuccess: ( info ) => console.log( 'Donated', info.currency, info.amount )
+    } );
+} );
+```
+
+**Render only supported methods, then attach**:
+
+```js
+mw.loader.using( 'ext.nativePayments' ).then( () => {
+    if ( mw.nativePayments.canUseApplePay() ) {
+        document.getElementById( 'pay-apple' ).hidden = false;
+        mw.nativePayments.attach( '#pay-apple', { amount: 25, paymentMethod: 'apple' } );
+    }
+    if ( mw.nativePayments.canUseGooglePay() ) {
+        document.getElementById( 'pay-google' ).hidden = false;
+        mw.nativePayments.attach( '#pay-google', { amount: 25, paymentMethod: 'google' } );
+    }
+} );
+```
+
+**Direct call** (caller handles the click):
+
+```js
+myButton.addEventListener( 'click', () => {
+    mw.nativePayments.pay( {
+        amount: parseFloat( input.value ),
+        paymentMethod: 'google',
+        successUrl: '/wiki/ThankYou'
+    } );
+} );
+```
+
 ## Configuration
 
 | Variable | Default | |
