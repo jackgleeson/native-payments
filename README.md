@@ -110,7 +110,17 @@ wfLoadExtension( 'NativePayments' );
 $wgNativePaymentsApiBase = 'https://paymentstest1.wmcloud.org';
 ```
 
-Cross-origin also requires the payments wiki to whitelist the core origin in `$wgCrossSiteAJAXdomains`.
+Cross-origin also requires the payments wiki to whitelist the core wiki's origin in `$wgCrossSiteAJAXdomains`:
+
+```php
+// In payments wiki's LocalSettings.php
+$wgCrossSiteAJAXdomains = [
+    'core.example.org',           // FR-Tech: 'paymentsipntest1.wmcloud.org'
+    // 'localhost:9014',          // add if testing via localhost directly
+];
+```
+
+Only the core wiki's origin is required. The payments wiki doesn't need to whitelist itself.
 
 ### Apple Pay domain validation
 
