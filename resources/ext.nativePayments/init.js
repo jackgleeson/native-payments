@@ -39,15 +39,21 @@
 		return resp.json();
 	};
 
-	const postToPayments = ( params ) => fetch(
-		`${ PAYMENTS_API_BASE }/api.php?origin=${ encodeURIComponent( window.location.origin ) }`,
-		{
-			method: 'POST',
-			credentials: 'include',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: new URLSearchParams( params ).toString()
+	// origin= triggers MW's CORS path and is rejected on same-origin installs,
+	// so only attach it when actually crossing origins.
+	const apiUrl = () => {
+		if ( PAYMENTS_API_BASE ) {
+			return `${ PAYMENTS_API_BASE }/api.php?origin=${ encodeURIComponent( window.location.origin ) }`;
 		}
-	).then( parseJsonResponse );
+		return '/api.php';
+	};
+
+	const postToPayments = ( params ) => fetch( apiUrl(), {
+		method: 'POST',
+		credentials: 'include',
+		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+		body: new URLSearchParams( params ).toString()
+	} ).then( parseJsonResponse );
 
 	// Payments config — fetched once from payments-wiki, cached.
 	let paymentsConfigPromise = null;
@@ -62,9 +68,11 @@
 			payment_method: 'google',
 			country: detectedCountry,
 			currency: currency,
-			format: 'json',
-			origin: window.location.origin
+			format: 'json'
 		} );
+		if ( PAYMENTS_API_BASE ) {
+			query.set( 'origin', window.location.origin );
+		}
 		paymentsConfigPromise = fetch( `${ PAYMENTS_API_BASE }/api.php?${ query }`, { credentials: 'omit' } )
 			.then( parseJsonResponse )
 			.then( ( data ) => {
@@ -413,14 +421,22 @@
 	};
 
 	const wireBanner = () => {
-		// Whole-button wrapper for Google Pay (covers the div surface, not just the label).
-		// Only wire the Google Pay tile — the banner's Continue button is the normal
-		// submit path for non-native methods and shouldn't launch a native sheet.
+		// Whole-button wrappers for the native payment tiles. Each tile is pinned to
+		// its own method so clicking the Apple tile on Chrome (or vice versa) bails
+		// rather than launching the wrong sheet.
 		const googleBtn = document.querySelector( '.frb-pm-google' );
 		if ( googleBtn ) {
 			attach( googleBtn, {
 				amount: getBannerAmount,
 				paymentMethod: 'google',
+				onSuccess: onTestSuccess
+			} );
+		}
+		const appleBtn = document.querySelector( '.frb-pm-applepay' );
+		if ( appleBtn ) {
+			attach( appleBtn, {
+				amount: getBannerAmount,
+				paymentMethod: 'apple',
 				onSuccess: onTestSuccess
 			} );
 		}
