@@ -209,11 +209,24 @@
 		...donorData
 	} ).then( ( data ) => data?.result?.isFailed === false );
 
-	const validateAppleMerchant = ( validationURL ) => postToPayments( {
+	const validateAppleMerchant = ( validationURL, amount ) => postToPayments( {
 		action: 'di_applesession_gravy',
 		validation_url: validationURL,
+		gateway: 'gravy',
+		payment_method: 'apple',
+		currency: currency,
+		country: detectedCountry,
+		amount: amount,
+		language: ( navigator.language || 'en' ).split( '-' )[ 0 ],
 		format: 'json'
-	} ).then( ( data ) => data.session );
+	} ).then( ( data ) => {
+		if ( !data?.session ) {
+			const serverErrors = data?.result?.errors;
+			const detail = serverErrors ? JSON.stringify( serverErrors ) : JSON.stringify( data );
+			throw new Error( `di_applesession_gravy returned no session. Server response: ${ detail }` );
+		}
+		return data.session;
+	} );
 
 	// Format amount for the payment sheet — JPY has no minor units.
 	const formatAmount = ( amount ) => {
@@ -235,15 +248,27 @@
 		const session = new ApplePaySession( 3, buildApplePayRequest( formattedAmount ) );
 
 		session.onvalidatemerchant = ( event ) => {
-			validateAppleMerchant( event.validationURL )
-				.then( ( merchantSession ) => session.completeMerchantValidation( merchantSession ) )
+			mw.log( '[NativePayments] onvalidatemerchant fired', event.validationURL );
+			validateAppleMerchant( event.validationURL, formattedAmount )
+				.then( ( merchantSession ) => {
+					mw.log( '[NativePayments] completeMerchantValidation called' );
+					session.completeMerchantValidation( merchantSession );
+				} )
 				.catch( ( err ) => {
 					mw.log.warn( '[NativePayments] Apple Pay merchant validation failed', err );
 					session.abort();
 				} );
 		};
 
+		session.onpaymentmethodselected = ( event ) => {
+			mw.log( '[NativePayments] onpaymentmethodselected', event.paymentMethod );
+			session.completePaymentMethodSelection( {
+				newTotal: { label: 'Wikimedia Foundation', type: 'final', amount: formattedAmount }
+			} );
+		};
+
 		session.onpaymentauthorized = ( event ) => {
+			mw.log( '[NativePayments] onpaymentauthorized fired' );
 			const donorData = extractApplePayData( event.payment );
 			submitToPaymentsWiki( donorData, formattedAmount )
 				.then( ( success ) => {
@@ -260,8 +285,8 @@
 				} );
 		};
 
-		session.oncancel = () => {
-			// User cancelled — nothing to do.
+		session.oncancel = ( event ) => {
+			mw.log( '[NativePayments] Apple Pay session cancelled', event );
 		};
 
 		session.begin();
